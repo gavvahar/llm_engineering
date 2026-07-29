@@ -51,3 +51,171 @@ dependencies = [
     "groq>=0.33.0",
     "xgboost>=3.1.1",
 ]
+
+# =============================================================================
+# RUFF — Python linter & formatter
+# =============================================================================
+
+[tool.ruff]
+line-length = 180
+exclude = ["__pycache__", "venv", ".tox", ".venv", "tests.py", "env"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B"]
+ignore = ["E203", "E501", "E701", "E401", "B008"]
+
+
+# =============================================================================
+# TOX — Test & task runner
+# =============================================================================
+
+# Default envs run when you type `tox` with no arguments
+[tool.tox]
+env_list = ["lint", "txt-lint", "format", "prettier", "toml-lint"]
+work_dir = "/tmp/.tox"
+
+# Shared base config inherited by all envs
+[tool.tox.env_run_base]
+pass_env = ["PATH"]
+set_env = { VIRTUALENV_OVERRIDE_APP_DATA = "{work_dir}/.virtualenv" }
+
+# --- Linting ----------------------------------------------------------------
+
+[tool.tox.env.lint]
+skip_install = true
+base_python = "python3"
+deps = ["ruff"]
+commands = [["ruff", "check", "--no-cache", "."]]
+
+[tool.tox.env."txt-lint"]
+skip_install = true
+allowlist_externals = ["npx", "npm"]
+commands = [
+  [
+    "npm",
+    "install",
+    "--save-dev",
+    "textlint",
+    "textlint-rule-common-misspellings",
+    "textlint-rule-write-good",
+  ],
+  [
+    "npx",
+    "textlint",
+    "--rule",
+    "common-misspellings",
+    "--rule",
+    "write-good",
+    "**/*.txt",
+  ],
+]
+
+
+# --- Formatting -------------------------------------------------------------
+
+[tool.tox.env.format]
+skip_install = true
+deps = ["ruff", "ty"]
+allowlist_externals = ["npx"]
+commands = [
+  [
+    "ruff",
+    "format",
+    "--no-cache",
+    "--verbose",
+    ".",
+  ],
+  [
+    "ruff",
+    "check",
+    "--no-cache",
+    "--fix",
+    "--verbose",
+    ".",
+  ],
+  [
+    "npx",
+    "prettier",
+    "--write",
+    "--log-level",
+    "log",
+    "**/*.{css,js,html,json,yml,yaml,md}",
+  ],
+  [
+    "npx",
+    "@taplo/cli",
+    "fmt",
+    "--no-auto-config",
+    "**/*.toml",
+  ],
+]
+
+[tool.tox.env.prettier]
+skip_install = true
+allowlist_externals = ["npx"]
+commands = [
+  [
+    "npx",
+    "prettier",
+    "--check",
+    "**/*.{css,js,html,json,yml,yaml,md}",
+  ],
+]
+
+[tool.tox.env."toml-lint"]
+skip_install = true
+allowlist_externals = ["npx"]
+commands = [
+  [
+    "npx",
+    "@taplo/cli",
+    "fmt",
+    "--check",
+    "--no-auto-config",
+    "**/*.toml",
+  ],
+  [
+    "npx",
+    "@taplo/cli",
+    "lint",
+    "--no-auto-config",
+    "**/*.toml",
+  ],
+]
+
+
+# --- Aggregate (CI) ---------------------------------------------------------
+
+# Runs the full CI chain: no-classes-check → lint → txt-lint → prettier → tests
+[tool.tox.env.all]
+skip_install = true
+deps = []
+allowlist_externals = ["tox"]
+commands = [
+  
+  [
+    "tox",
+    "-e",
+    "lint",
+  ],
+  [
+    "tox",
+    "-e",
+    "txt-lint",
+  ],
+  [
+    "tox",
+    "-e",
+    "prettier",
+  ],
+  [
+    "tox",
+    "-e",
+    "toml-lint",
+  ],
+  [
+    "tox",
+    "-e",
+    "format",
+  ],
+]
