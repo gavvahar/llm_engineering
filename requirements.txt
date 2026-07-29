@@ -24,3 +24,5 @@ twilio
 pydub
 protobuf==3.20.2
 wandb
+tox
+ruff
