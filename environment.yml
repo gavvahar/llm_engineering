@@ -19,5 +19,6 @@ dependencies:
   - chromadb
   - jupyter-dash
   - pyarrow
+  - gh
   - pip:
     - -r requirements.txt
