@@ -58,7 +58,29 @@ dependencies = [
 
 [tool.ruff]
 line-length = 180
-exclude = ["__pycache__", "venv", ".tox", ".venv", "tests.py", "env"]
+exclude = [
+    "__pycache__",
+    "venv",
+    ".tox",
+    ".venv",
+    "tests.py",
+    "env",
+    "community-contributions",
+    "week1/community-contributions",
+    "week2/community-contributions",
+    "week3/community-contributions",
+    "week4/community-contributions",
+    "week5/community-contributions",
+    "week6/community-contributions",
+    "week7/community_contributions",
+    "week8/community_contributions",
+    "!community-contributions/Nihar_Gavva",
+    "week1/solutions/day1_with_ollama.ipynb",
+    "setup/troubleshooting.ipynb",
+    "extras/trading/trades_claude.py",
+    "extras/trading/trades_gemini.py",
+    "extras/trading/trades_gpt-4o.py",
+]
 
 [tool.ruff.lint]
 select = ["E", "F", "B"]
