@@ -24,20 +24,14 @@ If it includes news or announcements, then summarize these too.
 
 def messages_for(website):
     """Create message list for the LLM."""
-    return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt_prefix + website}
-    ]
+    return [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt_prefix + website}]
 
 
 def summarize(url):
     """Fetch and summarize a website using Ollama."""
-    ollama = OpenAI(base_url=OLLAMA_BASE_URL, api_key='ollama')
+    ollama = OpenAI(base_url=OLLAMA_BASE_URL, api_key="ollama")
     website = fetch_website_contents(url)
-    response = ollama.chat.completions.create(
-        model=MODEL,
-        messages=messages_for(website)
-    )
+    response = ollama.chat.completions.create(model=MODEL, messages=messages_for(website))
     return response.choices[0].message.content
 
 

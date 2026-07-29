@@ -4,9 +4,7 @@ from modal import Image
 # Setup
 
 app = modal.App("pricer")
-image = Image.debian_slim().pip_install(
-    "torch", "transformers", "bitsandbytes", "accelerate", "peft"
-)
+image = Image.debian_slim().pip_install("torch", "transformers", "bitsandbytes", "accelerate", "peft")
 secrets = [modal.Secret.from_name("huggingface-secret")]
 
 # Constants
@@ -47,9 +45,7 @@ def price(description: str) -> float:
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
 
-    base_model = AutoModelForCausalLM.from_pretrained(
-        BASE_MODEL, quantization_config=quant_config, device_map="auto"
-    )
+    base_model = AutoModelForCausalLM.from_pretrained(BASE_MODEL, quantization_config=quant_config, device_map="auto")
 
     fine_tuned_model = PeftModel.from_pretrained(base_model, FINETUNED_MODEL, revision=REVISION)
 

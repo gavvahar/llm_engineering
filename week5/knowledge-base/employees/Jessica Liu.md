@@ -3,12 +3,14 @@
 # Jessica Liu
 
 ## Summary
+
 - **Date of Birth:** April 30, 1996
 - **Job Title:** Frontend Developer
 - **Location:** Remote (Based in Seattle, Washington)
 - **Current Salary:** $92,000
 
 ## Insurellm Career Progression
+
 - **July 2022 - Present:** Frontend Developer
   - Develops user interfaces for Rellm reinsurance platform using React
   - Implements responsive designs and ensures cross-browser compatibility
@@ -24,25 +26,28 @@
   - Learned HTML, CSS, JavaScript, and React fundamentals
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.1/5
-  *Good performance with steady contribution to team goals. Delivered features on time with good code quality.*
+  _Good performance with steady contribution to team goals. Delivered features on time with good code quality._
 
 - **2022:** Rating: 3.7/5
-  *Solid transition to Frontend Developer role. Showed improvement in technical skills but needed more guidance on complex features.*
+  _Solid transition to Frontend Developer role. Showed improvement in technical skills but needed more guidance on complex features._
 
 - **2021:** Rating: 3.4/5
-  *Adequate performance with some challenges. Struggled with React state management initially but improved after mentoring.*
+  _Adequate performance with some challenges. Struggled with React state management initially but improved after mentoring._
 
 - **2020:** Rating: 3.8/5
-  *Good start as Junior Developer. Eager to learn and receptive to feedback.*
+  _Good start as Junior Developer. Eager to learn and receptive to feedback._
 
 ## Compensation History
+
 - **2023:** Base Salary: $92,000 + Bonus: $6,000
 - **2022:** Base Salary: $85,000 + Bonus: $4,000
 - **2021:** Base Salary: $72,000 + Bonus: $2,000
 - **2020:** Base Salary: $68,000
 
 ## Other HR Notes
+
 - **Education:** BS in Computer Science from University of Manchester
 - **Skills:** Proficient in React, TypeScript, HTML/CSS, Jest for testing. Learning Next.js and GraphQL.
 - **Professional Development:** Completed Advanced React Patterns course (2023). Actively contributes to open-source projects.

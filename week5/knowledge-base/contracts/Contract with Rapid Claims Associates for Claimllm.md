@@ -3,6 +3,7 @@
 **Contract Date:** March 1, 2025
 **Contract Number:** CL-2025-0063
 **Parties:**
+
 - Insurellm, Inc.
 - Rapid Claims Associates, LLC
 
@@ -120,13 +121,15 @@ Insurellm commits to providing comprehensive support to Rapid Claims Associates:
 
 **Signatures:**
 
-_________________________________
+---
+
 **Sarah Chen**
 **Title**: Vice President of Sales
 **Insurellm, Inc.**
 **Date**: March 1, 2025
 
-_________________________________
+---
+
 **Marcus Johnson**
 **Title**: Chief Claims Officer
 **Rapid Claims Associates, LLC**

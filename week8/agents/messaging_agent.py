@@ -48,9 +48,7 @@ class MessagingAgent(Agent):
         self.push(text)
         self.log("Messaging Agent has completed")
 
-    def craft_message(
-        self, description: str, deal_price: float, estimated_true_value: float
-    ) -> str:
+    def craft_message(self, description: str, deal_price: float, estimated_true_value: float) -> str:
         user_prompt = "Please summarize this great deal in 2-3 sentences to be sent as an exciting push notification alerting the user about this deal.\n"
         user_prompt += f"Item Description: {description}\nOffered Price: {deal_price}\nEstimated true value: {estimated_true_value}"
         user_prompt += "\n\nRespond only with the 2-3 sentence message which will be used to alert & excite the user about this deal"

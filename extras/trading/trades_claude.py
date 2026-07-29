@@ -10,6 +10,7 @@ import Trade
 import random
 import numpy as np
 
+
 def trade2():
     # Buy if the current price is lower than the average of the last 5 days
     trades = []
@@ -18,6 +19,7 @@ def trade2():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade3():
     # Sell if the current price is higher than the average of the last 10 days
@@ -28,6 +30,7 @@ def trade3():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade4():
     # Buy if the current price is the lowest in the last 3 days
     trades = []
@@ -36,6 +39,7 @@ def trade4():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade5():
     # Sell if the current price is the highest in the last 3 days
@@ -46,6 +50,7 @@ def trade5():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade6():
     # Buy if the current price is higher than the previous day's price
     trades = []
@@ -54,6 +59,7 @@ def trade6():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade7():
     # Sell if the current price is lower than the previous day's price
@@ -64,6 +70,7 @@ def trade7():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade8():
     # Buy if the current price is higher than the average of the last 20 days
     trades = []
@@ -72,6 +79,7 @@ def trade8():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade9():
     # Sell if the current price is lower than the average of the last 20 days
@@ -82,6 +90,7 @@ def trade9():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade10():
     # Buy if the current price is higher than the highest price in the last 5 days
     trades = []
@@ -90,6 +99,7 @@ def trade10():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade11():
     # Sell if the current price is lower than the lowest price in the last 5 days
@@ -100,11 +110,13 @@ def trade11():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade12():
     # Long/Short: Buy the best-performing stock and sell the worst-performing stock in the last 10 days
     best_ticker = max(tickers, key=lambda x: (prices[x][0] - prices[x][9]) / prices[x][9])
     worst_ticker = min(tickers, key=lambda x: (prices[x][0] - prices[x][9]) / prices[x][9])
     return [Trade(best_ticker, 100), Trade(worst_ticker, -100)]
+
 
 def trade13():
     # Buy if the 5-day moving average crosses above the 20-day moving average
@@ -115,6 +127,7 @@ def trade13():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade14():
     # Sell if the 5-day moving average crosses below the 20-day moving average
     trades = []
@@ -123,6 +136,7 @@ def trade14():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade15():
     # Buy if the current volume is higher than the average volume of the last 10 days
@@ -133,6 +147,7 @@ def trade15():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade16():
     # Sell if the current volume is lower than the average volume of the last 10 days
     trades = []
@@ -142,12 +157,13 @@ def trade16():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade17():
     # Long/Short: Buy the stock with the highest relative strength index (RSI) and sell the stock with the lowest RSI
     rsi = {}
     for ticker in tickers:
-        gains = [max(prices[ticker][i] - prices[ticker][i+1], 0) for i in range(13)]
-        losses = [max(prices[ticker][i+1] - prices[ticker][i], 0) for i in range(13)]
+        gains = [max(prices[ticker][i] - prices[ticker][i + 1], 0) for i in range(13)]
+        losses = [max(prices[ticker][i + 1] - prices[ticker][i], 0) for i in range(13)]
         avg_gain = sum(gains) / 14
         avg_loss = sum(losses) / 14
         rs = avg_gain / avg_loss if avg_loss > 0 else 100
@@ -155,6 +171,7 @@ def trade17():
     best_ticker = max(tickers, key=lambda x: rsi[x])
     worst_ticker = min(tickers, key=lambda x: rsi[x])
     return [Trade(best_ticker, 100), Trade(worst_ticker, -100)]
+
 
 def trade18():
     # Buy if the current price is higher than the 50-day moving average and the 50-day moving average is higher than the 200-day moving average
@@ -165,6 +182,7 @@ def trade18():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade19():
     # Sell if the current price is lower than the 50-day moving average and the 50-day moving average is lower than the 200-day moving average
     trades = []
@@ -174,6 +192,7 @@ def trade19():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade20():
     # Long/Short: Buy the stock with the highest momentum and sell the stock with the lowest momentum
     momentums = {}
@@ -182,6 +201,7 @@ def trade20():
     best_ticker = max(tickers, key=lambda x: momentums[x])
     worst_ticker = min(tickers, key=lambda x: momentums[x])
     return [Trade(best_ticker, 100), Trade(worst_ticker, -100)]
+
 
 def trade21():
     # Buy if the current price is higher than the upper Bollinger Band
@@ -195,6 +215,7 @@ def trade21():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade22():
     # Sell if the current price is lower than the lower Bollinger Band
     trades = []
@@ -207,27 +228,30 @@ def trade22():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade23():
     # Buy if the current volatility is higher than the average volatility of the last 10 days
     trades = []
     for ticker in tickers:
         volatility = np.std(prices[ticker][:10])
-        avg_volatility = np.mean([np.std(prices[ticker][i:i+10]) for i in range(10)])
+        avg_volatility = np.mean([np.std(prices[ticker][i : i + 10]) for i in range(10)])
         if volatility > avg_volatility:
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade24():
     # Sell if the current volatility is lower than the average volatility of the last 10 days
     trades = []
     for ticker in tickers:
         volatility = np.std(prices[ticker][:10])
-        avg_volatility = np.mean([np.std(prices[ticker][i:i+10]) for i in range(10)])
+        avg_volatility = np.mean([np.std(prices[ticker][i : i + 10]) for i in range(10)])
         if volatility < avg_volatility:
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade25():
     # Long/Short: Buy the stock with the lowest volatility and sell the stock with the highest volatility
@@ -237,6 +261,7 @@ def trade25():
     best_ticker = min(tickers, key=lambda x: volatilities[x])
     worst_ticker = max(tickers, key=lambda x: volatilities[x])
     return [Trade(best_ticker, 100), Trade(worst_ticker, -100)]
+
 
 def trade26():
     # Buy if the current price is higher than the 20-day exponential moving average (EMA)
@@ -251,6 +276,7 @@ def trade26():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade27():
     # Sell if the current price is lower than the 20-day exponential moving average (EMA)
     trades = []
@@ -264,6 +290,7 @@ def trade27():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade28():
     # Buy if the current price is higher than the upper Keltner Channel
     trades = []
@@ -272,12 +299,13 @@ def trade28():
         multiplier = 2 / (20 + 1)
         for i in range(1, 20):
             ema = (prices[ticker][i] - ema) * multiplier + ema
-        atr = np.mean([np.max(prices[ticker][i:i+10]) - np.min(prices[ticker][i:i+10]) for i in range(10)])
+        atr = np.mean([np.max(prices[ticker][i : i + 10]) - np.min(prices[ticker][i : i + 10]) for i in range(10)])
         upper_channel = ema + 2 * atr
         if prices[ticker][0] > upper_channel:
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade29():
     # Sell if the current price is lower than the lower Keltner Channel
@@ -287,22 +315,24 @@ def trade29():
         multiplier = 2 / (20 + 1)
         for i in range(1, 20):
             ema = (prices[ticker][i] - ema) * multiplier + ema
-        atr = np.mean([np.max(prices[ticker][i:i+10]) - np.min(prices[ticker][i:i+10]) for i in range(10)])
+        atr = np.mean([np.max(prices[ticker][i : i + 10]) - np.min(prices[ticker][i : i + 10]) for i in range(10)])
         lower_channel = ema - 2 * atr
         if prices[ticker][0] < lower_channel:
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade30():
     # Long/Short: Buy the stock with the highest Sharpe ratio and sell the stock with the lowest Sharpe ratio
     sharpe_ratios = {}
     for ticker in tickers:
-        returns = [prices[ticker][i] / prices[ticker][i+1] - 1 for i in range(19)]
+        returns = [prices[ticker][i] / prices[ticker][i + 1] - 1 for i in range(19)]
         sharpe_ratios[ticker] = np.mean(returns) / np.std(returns)
     best_ticker = max(tickers, key=lambda x: sharpe_ratios[x])
     worst_ticker = min(tickers, key=lambda x: sharpe_ratios[x])
     return [Trade(best_ticker, 100), Trade(worst_ticker, -100)]
+
 
 def trade31():
     # Buy if the current price is higher than the Ichimoku Cloud conversion line
@@ -314,6 +344,7 @@ def trade31():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade32():
     # Buy if the current price is higher than the price 5 days ago
     trades = []
@@ -322,6 +353,7 @@ def trade32():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade33():
     # Sell if the current price is lower than the price 5 days ago
@@ -332,6 +364,7 @@ def trade33():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade34():
     # Buy if the current price is the highest in the last 15 days
     trades = []
@@ -341,6 +374,7 @@ def trade34():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade35():
     # Sell if the current price is the lowest in the last 15 days
     trades = []
@@ -349,6 +383,7 @@ def trade35():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade36():
     # Buy if the current price is higher than the 10-day simple moving average (SMA)
@@ -360,6 +395,7 @@ def trade36():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade37():
     # Sell if the current price is lower than the 10-day simple moving average (SMA)
     trades = []
@@ -370,6 +406,7 @@ def trade37():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade38():
     # Buy if the current price is higher than the highest price in the last 20 days
     trades = []
@@ -379,6 +416,7 @@ def trade38():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade39():
     # Sell if the current price is lower than the lowest price in the last 20 days
     trades = []
@@ -387,6 +425,7 @@ def trade39():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade40():
     # Buy if the current price is higher than the 50-day SMA
@@ -398,6 +437,7 @@ def trade40():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade41():
     # Sell if the current price is lower than the 50-day SMA
     trades = []
@@ -408,6 +448,7 @@ def trade41():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade42():
     # Buy if the current price is higher than the previous 2 days (a simple uptrend)
     trades = []
@@ -416,6 +457,7 @@ def trade42():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade43():
     # Sell if the current price is lower than the previous 2 days (a simple downtrend)
@@ -426,6 +468,7 @@ def trade43():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade44():
     # Buy if the current price is higher than the previous day's high (a breakout)
     trades = []
@@ -434,6 +477,7 @@ def trade44():
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade45():
     # Sell if the current price is lower than the previous day's low (a breakdown)
@@ -444,6 +488,7 @@ def trade45():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade46():
     # Buy if the current price is above the previous day's high and the previous day was a down day (a potential reversal)
     trades = []
@@ -453,6 +498,7 @@ def trade46():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade47():
     # Sell if the current price is below the previous day's low and the previous day was an up day (a potential reversal)
     trades = []
@@ -461,6 +507,7 @@ def trade47():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade48():
     # Buy if the current price is above the 5-day SMA and the 5-day SMA is above the 10-day SMA (a bullish crossover)
@@ -473,6 +520,7 @@ def trade48():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade49():
     # Sell if the current price is below the 5-day SMA and the 5-day SMA is below the 10-day SMA (a bearish crossover)
     trades = []
@@ -484,6 +532,7 @@ def trade49():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade50():
     # Buy if the current price is above the 50-day SMA and the previous price was below the 50-day SMA (a bullish breakthrough)
     trades = []
@@ -494,6 +543,7 @@ def trade50():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade51():
     # Sell if the current price is below the 50-day SMA and the previous price was above the 50-day SMA (a bearish breakthrough)
     trades = []
@@ -503,6 +553,7 @@ def trade51():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade52():
     # Buy if the current price is more than 2 standard deviations below the 20-day mean (a potential oversold condition)
@@ -515,6 +566,7 @@ def trade52():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade53():
     # Sell if the current price is more than 2 standard deviations above the 20-day mean (a potential overbought condition)
     trades = []
@@ -525,6 +577,7 @@ def trade53():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade54():
     # Buy if the current price is below the 50-day mean and the 50-day mean is increasing (a potential uptrend)
@@ -537,6 +590,7 @@ def trade54():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade55():
     # Sell if the current price is above the 50-day mean and the 50-day mean is decreasing (a potential downtrend)
     trades = []
@@ -547,6 +601,7 @@ def trade55():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade56():
     # Buy if the 5-day mean is above the 50-day mean and the 5-day mean was previously below the 50-day mean (a potential trend change)
@@ -560,6 +615,7 @@ def trade56():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade57():
     # Sell if the 5-day mean is below the 50-day mean and the 5-day mean was previously above the 50-day mean (a potential trend change)
     trades = []
@@ -572,6 +628,7 @@ def trade57():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade58():
     # Buy the ticker that has had the largest percent decrease over the last 10 days (a potential mean reversion play)
     percent_changes = {}
@@ -580,6 +637,7 @@ def trade58():
     worst_ticker = min(tickers, key=lambda x: percent_changes[x])
     return [Trade(worst_ticker, 100)]
 
+
 def trade59():
     # Sell the ticker that has had the largest percent increase over the last 10 days (a potential mean reversion play)
     percent_changes = {}
@@ -587,6 +645,7 @@ def trade59():
         percent_changes[ticker] = (prices[ticker][0] - prices[ticker][9]) / prices[ticker][9] * 100
     best_ticker = max(tickers, key=lambda x: percent_changes[x])
     return [Trade(best_ticker, -100)]
+
 
 def trade60():
     # Buy if the current price is above the 200-day mean and the 200-day mean is increasing (a potential long-term uptrend)
@@ -599,6 +658,7 @@ def trade60():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade61():
     # Sell if the current price is below the 200-day mean and the 200-day mean is decreasing (a potential long-term downtrend)
     trades = []
@@ -609,6 +669,7 @@ def trade61():
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
+
 
 def trade62():
     # Buy if the stock's return is greater than the market's return over the last 5 days
@@ -621,6 +682,7 @@ def trade62():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade63():
     # Sell if the stock's return is less than the market's return over the last 5 days
     trades = []
@@ -632,6 +694,7 @@ def trade63():
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade64():
     # Buy the stock with the highest relative strength compared to the market over the last 10 days
     relative_strengths = {}
@@ -641,6 +704,7 @@ def trade64():
         relative_strengths[ticker] = stock_return / market_return
     best_ticker = max(tickers, key=lambda x: relative_strengths[x])
     return [Trade(best_ticker, 100)]
+
 
 def trade65():
     # Sell the stock with the lowest relative strength compared to the market over the last 10 days
@@ -652,73 +716,79 @@ def trade65():
     worst_ticker = min(tickers, key=lambda x: relative_strengths[x])
     return [Trade(worst_ticker, -100)]
 
+
 def trade66():
     # Buy stocks that have a higher Sharpe ratio than the market over the last 20 days
     trades = []
-    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i+1] for t in tickers)) - 1 for i in range(19)]
+    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i + 1] for t in tickers)) - 1 for i in range(19)]
     market_sharpe = np.mean(market_returns) / np.std(market_returns)
     for ticker in tickers:
-        stock_returns = [(prices[ticker][i] / prices[ticker][i+1]) - 1 for i in range(19)]
+        stock_returns = [(prices[ticker][i] / prices[ticker][i + 1]) - 1 for i in range(19)]
         stock_sharpe = np.mean(stock_returns) / np.std(stock_returns)
         if stock_sharpe > market_sharpe:
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade67():
     # Sell stocks that have a lower Sharpe ratio than the market over the last 20 days
     trades = []
-    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i+1] for t in tickers)) - 1 for i in range(19)]
+    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i + 1] for t in tickers)) - 1 for i in range(19)]
     market_sharpe = np.mean(market_returns) / np.std(market_returns)
     for ticker in tickers:
-        stock_returns = [(prices[ticker][i] / prices[ticker][i+1]) - 1 for i in range(19)]
+        stock_returns = [(prices[ticker][i] / prices[ticker][i + 1]) - 1 for i in range(19)]
         stock_sharpe = np.mean(stock_returns) / np.std(stock_returns)
         if stock_sharpe < market_sharpe:
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade68():
     # Buy stocks that have a higher beta than 1 (they move more than the market)
     trades = []
-    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i+1] for t in tickers)) - 1 for i in range(49)]
+    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i + 1] for t in tickers)) - 1 for i in range(49)]
     for ticker in tickers:
-        stock_returns = [(prices[ticker][i] / prices[ticker][i+1]) - 1 for i in range(49)]
+        stock_returns = [(prices[ticker][i] / prices[ticker][i + 1]) - 1 for i in range(49)]
         beta = np.cov(stock_returns, market_returns)[0, 1] / np.var(market_returns)
         if beta > 1:
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade69():
     # Sell stocks that have a lower beta than 1 (they move less than the market)
     trades = []
-    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i+1] for t in tickers)) - 1 for i in range(49)]
+    market_returns = [(sum(prices[t][i] for t in tickers) / sum(prices[t][i + 1] for t in tickers)) - 1 for i in range(49)]
     for ticker in tickers:
-        stock_returns = [(prices[ticker][i] / prices[ticker][i+1]) - 1 for i in range(49)]
+        stock_returns = [(prices[ticker][i] / prices[ticker][i + 1]) - 1 for i in range(49)]
         beta = np.cov(stock_returns, market_returns)[0, 1] / np.var(market_returns)
         if beta < 1:
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade70():
     # Buy stocks that have a higher percentage of up days than the market over the last 50 days
     trades = []
-    market_up_days = sum(sum(prices[t][i] for t in tickers) > sum(prices[t][i+1] for t in tickers) for i in range(49))
+    market_up_days = sum(sum(prices[t][i] for t in tickers) > sum(prices[t][i + 1] for t in tickers) for i in range(49))
     for ticker in tickers:
-        stock_up_days = sum(prices[ticker][i] > prices[ticker][i+1] for i in range(49))
+        stock_up_days = sum(prices[ticker][i] > prices[ticker][i + 1] for i in range(49))
         if stock_up_days > market_up_days:
             quantity = random.randrange(1, 100)
             trades.append(Trade(ticker, quantity))
     return trades
 
+
 def trade71():
     # Sell stocks that have a lower percentage of up days than the market over the last 50 days
     trades = []
-    market_up_days = sum(sum(prices[t][i] for t in tickers) > sum(prices[t][i+1] for t in tickers) for i in range(49))
+    market_up_days = sum(sum(prices[t][i] for t in tickers) > sum(prices[t][i + 1] for t in tickers) for i in range(49))
     for ticker in tickers:
-        stock_up_days = sum(prices[ticker][i] > prices[ticker][i+1] for i in range(49))
+        stock_up_days = sum(prices[ticker][i] > prices[ticker][i + 1] for i in range(49))
         if stock_up_days < market_up_days:
             quantity = random.randrange(-100, -1)
             trades.append(Trade(ticker, quantity))

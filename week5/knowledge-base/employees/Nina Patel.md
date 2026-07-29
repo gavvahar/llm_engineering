@@ -3,12 +3,14 @@
 # Nina Patel
 
 ## Summary
+
 - **Date of Birth:** July 25, 1991
 - **Job Title:** Business Intelligence Analyst
 - **Location:** Chicago, Illinois
 - **Current Salary:** $82,000
 
 ## Insurellm Career Progression
+
 - **February 2021 - Present:** Business Intelligence Analyst
   - Builds dashboards and reports using Tableau and Looker for executive team
   - Analyzes business metrics across all product lines
@@ -24,22 +26,24 @@
   - Built Excel-based reporting tools for operations team
 
 ## Annual Performance History
+
 - **2023:** Rating: 3.5/5
-  *Meets expectations but has room for growth. Delivered all required reports but showed limited proactivity in identifying new insights.*
+  _Meets expectations but has room for growth. Delivered all required reports but showed limited proactivity in identifying new insights._
 
 - **2022:** Rating: 3.2/5
-  *Below expectations. Struggled with complex SQL queries and missed several deadlines. Enrolled in advanced analytics training.*
+  _Below expectations. Struggled with complex SQL queries and missed several deadlines. Enrolled in advanced analytics training._
 
 - **2021:** Rating: 3.8/5
-  *Solid performance in first year as BI Analyst. Demonstrated good grasp of business metrics and stakeholder communication.*
+  _Solid performance in first year as BI Analyst. Demonstrated good grasp of business metrics and stakeholder communication._
 
 - **2020:** Rating: 4.0/5
-  *Strong performance as Junior Analyst. Showed initiative and eagerness to learn new tools.*
+  _Strong performance as Junior Analyst. Showed initiative and eagerness to learn new tools._
 
 - **2019:** Rating: 3.9/5
-  *Good onboarding year. Quick to adapt to Insurellm's data systems.*
+  _Good onboarding year. Quick to adapt to Insurellm's data systems._
 
 ## Compensation History
+
 - **2023:** Base Salary: $82,000 + Bonus: $4,000
 - **2022:** Base Salary: $78,000 + Bonus: $2,000
 - **2021:** Base Salary: $75,000 + Bonus: $5,000
@@ -47,6 +51,7 @@
 - **2019:** Base Salary: $60,000
 
 ## Other HR Notes
+
 - **Education:** BS in Statistics from University of Illinois at Chicago
 - **Skills:** Proficient in SQL, Tableau, Looker, Excel. Learning Python for advanced analytics.
 - **Development Areas:** Needs to improve proactive problem-solving and complex analytical thinking. Working with mentor to develop these skills.

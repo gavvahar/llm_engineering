@@ -3,12 +3,14 @@
 # Priya Sharma
 
 ## Summary
+
 - **Date of Birth:** January 8, 1986
 - **Job Title:** Senior Data Scientist
 - **Location:** San Francisco, California
 - **Current Salary:** $145,000
 
 ## Insurellm Career Progression
+
 - **March 2018 - Present:** Senior Data Scientist
   - Leads machine learning initiatives for risk prediction models
   - Built recommendation engine for Marketllm increasing conversion by 28%
@@ -24,25 +26,27 @@
   - Published 5 peer-reviewed papers
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.9/5
-  *Exceptional performance. Led breakthrough AI-driven underwriting project. Excellent technical leadership and mentorship.*
+  _Exceptional performance. Led breakthrough AI-driven underwriting project. Excellent technical leadership and mentorship._
 
 - **2022:** Rating: 4.7/5
-  *Outstanding work on risk prediction models. Strong collaboration with product team and technical innovation.*
+  _Outstanding work on risk prediction models. Strong collaboration with product team and technical innovation._
 
 - **2021:** Rating: 4.5/5
-  *Exceeded expectations with successful launch of recommendation engine. Effective mentor to junior team members.*
+  _Exceeded expectations with successful launch of recommendation engine. Effective mentor to junior team members._
 
 - **2020:** Rating: 4.3/5
-  *Strong performance despite remote transition challenges. Maintained high-quality model development.*
+  _Strong performance despite remote transition challenges. Maintained high-quality model development._
 
 - **2019:** Rating: 4.6/5
-  *Excellent contributions to fraud detection systems. Recognized for thought leadership in ML applications.*
+  _Excellent contributions to fraud detection systems. Recognized for thought leadership in ML applications._
 
 - **2018:** Rating: 4.2/5
-  *Solid first year. Quick to understand insurance domain and apply ML expertise effectively.*
+  _Solid first year. Quick to understand insurance domain and apply ML expertise effectively._
 
 ## Compensation History
+
 - **2023:** Base Salary: $145,000 + Bonus: $25,000
 - **2022:** Base Salary: $138,000 + Bonus: $22,000
 - **2021:** Base Salary: $130,000 + Bonus: $20,000
@@ -51,6 +55,7 @@
 - **2018:** Base Salary: $108,000 + Bonus: $12,000
 
 ## Other HR Notes
+
 - **Education:** PhD in Computer Science (Machine Learning) from Stanford University
 - **Publications:** 7+ peer-reviewed papers in ML conferences and journals
 - **Speaking:** Regular speaker at ML and InsurTech conferences. Represented Insurellm at 4 major conferences in 2023.

@@ -3,12 +3,14 @@
 # David Kim
 
 ## Summary
+
 - **Date of Birth:** September 22, 1992
 - **Job Title:** DevOps Engineer
 - **Location:** New York, New York
 - **Current Salary:** $118,000
 
 ## Insurellm Career Progression
+
 - **August 2021 - Present:** DevOps Engineer
   - Manages AWS infrastructure for all Insurellm products
   - Implemented CI/CD pipelines reducing deployment time by 60%
@@ -24,16 +26,18 @@
   - Provided technical support for cloud-based services
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.5/5
-  *Strong performance with excellent infrastructure improvements. Successfully led Kubernetes migration with minimal downtime.*
+  _Strong performance with excellent infrastructure improvements. Successfully led Kubernetes migration with minimal downtime._
 
 - **2022:** Rating: 3.5/5
-  *Adequate performance but struggled with on-call responsibilities. Improved response times after additional training.*
+  _Adequate performance but struggled with on-call responsibilities. Improved response times after additional training._
 
 - **2021:** Rating: 4.0/5
-  *Solid first year as DevOps Engineer. Quick learner who adapted well to increased responsibilities.*
+  _Solid first year as DevOps Engineer. Quick learner who adapted well to increased responsibilities._
 
 ## Compensation History
+
 - **2023:** Base Salary: $118,000 + Bonus: $12,000
 - **2022:** Base Salary: $108,000 + Bonus: $8,000
 - **2021:** Base Salary: $100,000 + Bonus: $5,000
@@ -41,6 +45,7 @@
 - **2019:** Base Salary: $75,000
 
 ## Other HR Notes
+
 - **Certifications:** AWS Certified Solutions Architect (2022), Certified Kubernetes Administrator (2023)
 - **Training:** Completed advanced Docker and container orchestration courses. Currently pursuing AWS DevOps Professional certification.
 - **On-Call Rotation:** Participates in weekly on-call rotation for production systems.

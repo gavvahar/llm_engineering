@@ -3,12 +3,14 @@
 # Carlos Rodriguez
 
 ## Summary
+
 - **Date of Birth:** October 12, 1989
 - **Job Title:** Solutions Engineer
 - **Location:** Remote (Based in Miami, Florida)
 - **Current Salary:** $125,000
 
 ## Insurellm Career Progression
+
 - **June 2019 - Present:** Solutions Engineer
   - Provides technical expertise during enterprise sales cycles
   - Conducts product demonstrations and proof-of-concept implementations
@@ -24,22 +26,24 @@
   - Worked with Java, Python, and SQL technologies
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.9/5
-  *Outstanding performance. Instrumental in closing $3M in new business. Excellent technical presentations and client relationships.*
+  _Outstanding performance. Instrumental in closing $3M in new business. Excellent technical presentations and client relationships._
 
 - **2022:** Rating: 4.6/5
-  *Exceeded expectations. Strong technical demos that significantly influenced win rates. Great collaboration with sales team.*
+  _Exceeded expectations. Strong technical demos that significantly influenced win rates. Great collaboration with sales team._
 
 - **2021:** Rating: 4.4/5
-  *Solid performance with good sales support. Needed to improve documentation of technical solutions.*
+  _Solid performance with good sales support. Needed to improve documentation of technical solutions._
 
 - **2020:** Rating: 3.9/5
-  *Good performance during challenging remote transition. Some gaps in product knowledge addressed through training.*
+  _Good performance during challenging remote transition. Some gaps in product knowledge addressed through training._
 
 - **2019:** Rating: 4.1/5
-  *Strong start as Solutions Engineer. Quick learner with excellent technical communication skills.*
+  _Strong start as Solutions Engineer. Quick learner with excellent technical communication skills._
 
 ## Compensation History
+
 - **2023:** Base Salary: $125,000 + Bonus: $22,000
 - **2022:** Base Salary: $118,000 + Bonus: $18,000
 - **2021:** Base Salary: $110,000 + Bonus: $14,000
@@ -47,6 +51,7 @@
 - **2019:** Base Salary: $95,000 + Bonus: $8,000
 
 ## Other HR Notes
+
 - **Education:** MS in Computer Science from University of Florida
 - **Certifications:** AWS Solutions Architect Professional, Salesforce Certified Technical Architect
 - **Languages:** Fluent in English and Spanish, frequently supports Latin American clients

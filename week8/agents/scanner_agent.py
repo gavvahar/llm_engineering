@@ -56,13 +56,15 @@ class ScannerAgent(Agent):
         user_prompt += self.USER_PROMPT_SUFFIX
         return user_prompt
 
-    def scan(self, memory: List[str] = []) -> Optional[DealSelection]:
+    def scan(self, memory: List[str] = None) -> Optional[DealSelection]:
         """
         Call OpenAI to provide a high potential list of deals with good descriptions and prices
         Use StructuredOutputs to ensure it conforms to our specifications
         :param memory: a list of URLs representing deals already raised
         :return: a selection of good deals, or None if there aren't any
         """
+        if memory is None:
+            memory = []
         scraped = self.fetch_deals(memory)
         if scraped:
             user_prompt = self.make_user_prompt(scraped)
@@ -78,16 +80,16 @@ class ScannerAgent(Agent):
             )
             result = result.choices[0].message.parsed
             result.deals = [deal for deal in result.deals if deal.price > 0]
-            self.log(
-                f"Scanner Agent received {len(result.deals)} selected deals with price>0 from OpenAI"
-            )
+            self.log(f"Scanner Agent received {len(result.deals)} selected deals with price>0 from OpenAI")
             return result
         return None
 
-    def test_scan(self, memory: List[str] = []) -> Optional[DealSelection]:
+    def test_scan(self, memory: List[str] = None) -> Optional[DealSelection]:
         """
         Return a test DealSelection, to be used during testing
         """
+        if memory is None:
+            memory = []
         results = {
             "deals": [
                 {

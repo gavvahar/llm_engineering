@@ -3,12 +3,14 @@
 # Jennifer Adams
 
 ## Summary
+
 - **Date of Birth:** July 7, 1997
 - **Job Title:** Sales Development Representative
 - **Location:** Remote (Based in Denver, Colorado)
 - **Current Salary:** $58,000
 
 ## Insurellm Career Progression
+
 - **March 2023 - Present:** Sales Development Representative
   - Generates qualified leads for enterprise sales team
   - Conducts outbound prospecting via phone, email, and LinkedIn
@@ -25,14 +27,17 @@
   - Developed communication and problem-solving skills
 
 ## Annual Performance History
+
 - **2023:** Rating: 3.0/5
-  *Meets basic expectations. Achieved 78% of lead generation quota. Shows effort but struggles with conversion rates. Needs improvement in discovery call quality.*
+  _Meets basic expectations. Achieved 78% of lead generation quota. Shows effort but struggles with conversion rates. Needs improvement in discovery call quality._
 
 ## Compensation History
+
 - **2023:** Base Salary: $58,000 + Commission: $4,200
 - **2022:** Intern Stipend: $22/hour
 
 ## Other HR Notes
+
 - **Education:** BA in Business Administration from University of Denver (graduated 2022)
 - **Skills:** Learning Salesforce, LinkedIn Sales Navigator, and sales prospecting techniques
 - **Development Plan:** Enrolled in sales skills training program. Manager providing weekly coaching on objection handling and qualification techniques.

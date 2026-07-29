@@ -24,9 +24,7 @@ class Preprocessor:
 
     def preprocess(self, text: str) -> str:
         messages = self.messages_for(text)
-        response = completion(
-            messages=messages, model=self.model_name, reasoning_effort=self.reasoning_effort
-        )
+        response = completion(messages=messages, model=self.model_name, reasoning_effort=self.reasoning_effort)
         self.total_input_tokens += response.usage.prompt_tokens
         self.total_output_tokens += response.usage.completion_tokens
         self.total_cost += response._hidden_params["response_cost"]

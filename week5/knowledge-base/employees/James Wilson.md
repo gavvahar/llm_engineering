@@ -3,12 +3,14 @@
 # James Wilson
 
 ## Summary
+
 - **Date of Birth:** April 5, 1978
 - **Job Title:** Chief Technology Officer (CTO)
 - **Location:** San Francisco, California
 - **Current Salary:** $285,000
 
 ## Insurellm Career Progression
+
 - **January 2017 - Present:** Chief Technology Officer
   - Reports directly to CEO, member of executive leadership team
   - Oversees all technology strategy and engineering operations
@@ -30,28 +32,30 @@
   - Led technical architecture for critical business applications
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.9/5
-  *Outstanding performance. Successfully led AI transformation initiative. Exceptional strategic leadership and team building. Key driver of company growth.*
+  _Outstanding performance. Successfully led AI transformation initiative. Exceptional strategic leadership and team building. Key driver of company growth._
 
 - **2022:** Rating: 4.7/5
-  *Exceeded expectations. Strong execution on platform modernization. Improved engineering productivity and velocity significantly.*
+  _Exceeded expectations. Strong execution on platform modernization. Improved engineering productivity and velocity significantly._
 
 - **2021:** Rating: 4.6/5
-  *Excellent performance navigating remote transition. Built strong engineering culture and maintained high delivery standards.*
+  _Excellent performance navigating remote transition. Built strong engineering culture and maintained high delivery standards._
 
 - **2020:** Rating: 4.4/5
-  *Strong performance during challenging year. Successfully pivoted technology strategy for remote-first world.*
+  _Strong performance during challenging year. Successfully pivoted technology strategy for remote-first world._
 
 - **2019:** Rating: 4.8/5
-  *Exceptional leadership. Scaled engineering organization effectively while maintaining quality and culture.*
+  _Exceptional leadership. Scaled engineering organization effectively while maintaining quality and culture._
 
 - **2018:** Rating: 4.5/5
-  *Excellent year with successful cloud migration. Strong technical vision and execution.*
+  _Excellent year with successful cloud migration. Strong technical vision and execution._
 
 - **2017:** Rating: 4.3/5
-  *Strong start as CTO. Quickly assessed technical landscape and began strategic improvements.*
+  _Strong start as CTO. Quickly assessed technical landscape and began strategic improvements._
 
 ## Compensation History
+
 - **2023:** Base Salary: $285,000 + Bonus: $125,000 + Equity refresh
 - **2022:** Base Salary: $270,000 + Bonus: $110,000 + Equity refresh
 - **2021:** Base Salary: $255,000 + Bonus: $100,000
@@ -61,6 +65,7 @@
 - **2017:** Base Salary: $195,000 + Bonus: $70,000 + Significant equity grant
 
 ## Other HR Notes
+
 - **Education:** MS in Computer Science from MIT, BS in Computer Engineering from Stanford University
 - **Board Participation:** Serves on technical advisory board for two InsurTech startups
 - **Industry Recognition:** Named to InsureTech 100 list (2021, 2022, 2023), speaker at major technology conferences

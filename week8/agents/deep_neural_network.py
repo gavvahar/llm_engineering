@@ -1,10 +1,6 @@
 import numpy as np
-from tqdm.notebook import tqdm
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
-from torch.optim.lr_scheduler import CosineAnnealingLR
 from sklearn.feature_extraction.text import HashingVectorizer
 import logging
 
@@ -43,7 +39,7 @@ class DeepNeuralNetwork(nn.Module):
 
         # Residual blocks
         self.residual_blocks = nn.ModuleList()
-        for i in range(num_layers - 2):
+        for _i in range(num_layers - 2):
             self.residual_blocks.append(ResidualBlock(hidden_size, dropout_prob))
 
         # Output layer

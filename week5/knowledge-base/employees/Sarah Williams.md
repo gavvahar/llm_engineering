@@ -3,12 +3,14 @@
 # Sarah Williams
 
 ## Summary
+
 - **Date of Birth:** November 3, 1994
 - **Job Title:** UX Designer
 - **Location:** Remote (Based in Portland, Oregon)
 - **Current Salary:** $95,000
 
 ## Insurellm Career Progression
+
 - **January 2022 - Present:** UX Designer
   - Leads design for Homellm home insurance portal
   - Conducted comprehensive user research resulting in 35% improvement in user satisfaction scores
@@ -24,25 +26,28 @@
   - Worked closely with developers to implement design systems
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.4/5
-  *Strong design contributions with excellent user research skills. Led successful Homellm redesign project.*
+  _Strong design contributions with excellent user research skills. Led successful Homellm redesign project._
 
 - **2022:** Rating: 4.0/5
-  *Good first year as UX Designer. Showed initiative and creativity, though sometimes needed guidance on complex projects.*
+  _Good first year as UX Designer. Showed initiative and creativity, though sometimes needed guidance on complex projects._
 
 - **2021:** Rating: 3.6/5
-  *Adequate performance but struggled with time management on multiple concurrent projects. Improved by year end.*
+  _Adequate performance but struggled with time management on multiple concurrent projects. Improved by year end._
 
 - **2020:** Rating: 4.2/5
-  *Solid performance as Junior Designer. Quick to learn Insurellm's design system and processes.*
+  _Solid performance as Junior Designer. Quick to learn Insurellm's design system and processes._
 
 ## Compensation History
+
 - **2023:** Base Salary: $95,000 + Bonus: $8,000
 - **2022:** Base Salary: $88,000 + Bonus: $6,000
 - **2021:** Base Salary: $78,000 + Bonus: $3,000
 - **2020:** Base Salary: $70,000
 
 ## Other HR Notes
+
 - **Education:** BFA in Graphic Design from Rhode Island School of Design
 - **Skills:** Expert in Figma, Sketch, Adobe Creative Suite. Proficient in HTML/CSS for design prototyping.
 - **Professional Development:** Completed UX Research Certification from Nielsen Norman Group (2023). Regularly attends design conferences.

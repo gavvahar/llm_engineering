@@ -3,12 +3,14 @@
 # Michael O'Brien
 
 ## Summary
+
 - **Date of Birth:** May 20, 1984
 - **Job Title:** Account Executive
 - **Location:** Chicago, Illinois
 - **Current Salary:** $95,000
 
 ## Insurellm Career Progression
+
 - **January 2017 - Present:** Account Executive
   - Manages enterprise sales for Midwest territory
   - Focuses on reinsurance and large insurance carrier accounts
@@ -24,28 +26,30 @@
   - Developed foundational sales skills and territory management
 
 ## Annual Performance History
+
 - **2023:** Rating: 3.4/5
-  *Meets expectations but below peak performance. Hit 92% of quota. Faced headwinds in reinsurance market. Need to diversify pipeline.*
+  _Meets expectations but below peak performance. Hit 92% of quota. Faced headwinds in reinsurance market. Need to diversify pipeline._
 
 - **2022:** Rating: 3.8/5
-  *Good performance with solid quota attainment at 105%. Some key deals slipped to next quarter affecting timing.*
+  _Good performance with solid quota attainment at 105%. Some key deals slipped to next quarter affecting timing._
 
 - **2021:** Rating: 4.5/5
-  *Excellent year. Exceeded quota at 142%. Closed two major enterprise deals. Strong relationship building.*
+  _Excellent year. Exceeded quota at 142%. Closed two major enterprise deals. Strong relationship building._
 
 - **2020:** Rating: 3.6/5
-  *Challenging year with pandemic impact. Hit 88% of quota but showed resilience and adapted to virtual selling.*
+  _Challenging year with pandemic impact. Hit 88% of quota but showed resilience and adapted to virtual selling._
 
 - **2019:** Rating: 4.2/5
-  *Strong performance at 125% quota attainment. Expanded territory successfully.*
+  _Strong performance at 125% quota attainment. Expanded territory successfully._
 
 - **2018:** Rating: 4.0/5
-  *Solid year with 110% quota achievement. Building strong pipeline in new territory.*
+  _Solid year with 110% quota achievement. Building strong pipeline in new territory._
 
 - **2017:** Rating: 3.5/5
-  *Good onboarding year. Learning curve with insurance industry specifics but showed promise.*
+  _Good onboarding year. Learning curve with insurance industry specifics but showed promise._
 
 ## Compensation History
+
 - **2023:** Base Salary: $95,000 + Commission: $48,000
 - **2022:** Base Salary: $92,000 + Commission: $62,000
 - **2021:** Base Salary: $88,000 + Commission: $88,000
@@ -55,6 +59,7 @@
 - **2017:** Base Salary: $75,000 + Commission: $35,000
 
 ## Other HR Notes
+
 - **Education:** BA in Business from University of Illinois
 - **Awards:** Sales Excellence Award 2021, President's Club member 2019, 2021
 - **Pipeline Management:** Currently working to rebuild pipeline after softer 2023. Manager providing additional support and marketing resources.

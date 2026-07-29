@@ -185,9 +185,7 @@ def main():
 
         with gr.Row():
             with gr.Column(scale=1):
-                retrieval_metrics = gr.HTML(
-                    "<div style='padding: 20px; text-align: center; color: #999;'>Click 'Run Evaluation' to start</div>"
-                )
+                retrieval_metrics = gr.HTML("<div style='padding: 20px; text-align: center; color: #999;'>Click 'Run Evaluation' to start</div>")
 
             with gr.Column(scale=1):
                 retrieval_chart = gr.BarPlot(
@@ -205,9 +203,7 @@ def main():
 
         with gr.Row():
             with gr.Column(scale=1):
-                answer_metrics = gr.HTML(
-                    "<div style='padding: 20px; text-align: center; color: #999;'>Click 'Run Evaluation' to start</div>"
-                )
+                answer_metrics = gr.HTML("<div style='padding: 20px; text-align: center; color: #999;'>Click 'Run Evaluation' to start</div>")
 
             with gr.Column(scale=1):
                 answer_chart = gr.BarPlot(

@@ -140,9 +140,7 @@ class App:
                 thread = threading.Thread(target=worker)
                 thread.start()
 
-                for log_data, output, final_result in update_output(
-                    initial_log_data, log_queue, result_queue
-                ):
+                for log_data, output, final_result in update_output(initial_log_data, log_queue, result_queue):
                     yield log_data, output, final_result
 
             def do_select(selected_index: gr.SelectData):
@@ -152,9 +150,7 @@ class App:
                 self.get_agent_framework().planner.messenger.alert(opportunity)
 
             with gr.Row():
-                gr.Markdown(
-                    '<div style="text-align: center;font-size:24px"><strong>The Price is Right</strong> - Autonomous Agent Framework that hunts for deals</div>'
-                )
+                gr.Markdown('<div style="text-align: center;font-size:24px"><strong>The Price is Right</strong> - Autonomous Agent Framework that hunts for deals</div>')
             with gr.Row():
                 gr.Markdown(
                     '<div style="text-align: center;font-size:14px">A proprietary fine-tuned LLM deployed on Modal and a RAG pipeline with a frontier model collaborate to send push notifications with great online deals.</div>'
@@ -172,7 +168,7 @@ class App:
                 with gr.Column(scale=1):
                     logs = gr.HTML()
                 with gr.Column(scale=1):
-                    plot = gr.Plot(value=get_plot(), show_label=False)
+                    gr.Plot(value=get_plot(), show_label=False)
 
             ui.load(
                 run_with_logging,

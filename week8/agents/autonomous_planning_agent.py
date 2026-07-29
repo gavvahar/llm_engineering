@@ -42,9 +42,7 @@ class AutonomousPlanningAgent(Agent):
         estimate = self.ensemble.price(description)
         return f"The estimated true value of {description} is {estimate}"
 
-    def notify_user_of_deal(
-        self, description: str, deal_price: float, estimated_true_value: float, url: str
-    ) -> Dict:
+    def notify_user_of_deal(self, description: str, deal_price: float, estimated_true_value: float, url: str) -> Dict:
         """
         Run the tool to notify the user
         """
@@ -55,9 +53,7 @@ class AutonomousPlanningAgent(Agent):
             self.messenger.notify(description, deal_price, estimated_true_value, url)
             deal = Deal(product_description=description, price=deal_price, url=url)
             discount = estimated_true_value - deal_price
-            self.opportunity = Opportunity(
-                deal=deal, estimate=estimated_true_value, discount=discount
-            )
+            self.opportunity = Opportunity(deal=deal, estimate=estimated_true_value, discount=discount)
         return "Notification sent ok"
 
     scan_function = {
@@ -154,21 +150,21 @@ class AutonomousPlanningAgent(Agent):
         {"role": "user", "content": user_message},
     ]
 
-    def plan(self, memory: List[str] = []) -> Optional[Opportunity]:
+    def plan(self, memory: List[str] = None) -> Optional[Opportunity]:
         """
         Run the full workflow, providing the LLM with tools to surface scraped deals to the user
         :param memory: a list of URLs that have been surfaced in the past
         :return: an Opportunity if one was surfaced, otherwise None
         """
+        if memory is None:
+            memory = []
         self.log("Autonomous Planning Agent is kicking off a run")
         self.memory = memory
         self.opportunity = None
         messages = self.messages[:]
         done = False
         while not done:
-            response = self.openai.chat.completions.create(
-                model=self.MODEL, messages=messages, tools=self.get_tools()
-            )
+            response = self.openai.chat.completions.create(model=self.MODEL, messages=messages, tools=self.get_tools())
             if response.choices[0].finish_reason == "tool_calls":
                 message = response.choices[0].message
                 results = self.handle_tool_call(message)

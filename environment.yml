@@ -21,4 +21,4 @@ dependencies:
   - pyarrow
   - gh
   - pip:
-    - -r requirements.txt
+      - -r requirements.txt

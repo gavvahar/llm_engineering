@@ -3,6 +3,7 @@
 **Contract Date:** May 3, 2025
 **Contract Number:** HM-2025-E-0112
 **Parties:**
+
 - Insurellm, Inc.
 - SafeHaven Property Insurance, Inc.
 
@@ -233,13 +234,15 @@ Insurellm commits to comprehensive Enterprise-level support for SafeHaven Proper
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: May 3, 2025
 
-_________________________________
+---
+
 **Laura Mitchell**
 **Title**: President & Chief Executive Officer
 **SafeHaven Property Insurance, Inc.**

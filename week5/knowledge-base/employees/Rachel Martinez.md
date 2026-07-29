@@ -3,12 +3,14 @@
 # Rachel Martinez
 
 ## Summary
+
 - **Date of Birth:** June 8, 1987
 - **Job Title:** Product Manager
 - **Location:** San Francisco, California
 - **Current Salary:** $135,000
 
 ## Insurellm Career Progression
+
 - **March 2019 - Present:** Product Manager
   - Leads product strategy for Carllm, the auto insurance portal
   - Successfully launched three major feature releases that increased user engagement by 45%
@@ -24,22 +26,24 @@
   - Created business requirements documents for new product initiatives
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.6/5
-  *Exceptional year with successful launch of AI-powered claims prediction feature. Strong leadership and stakeholder management.*
+  _Exceptional year with successful launch of AI-powered claims prediction feature. Strong leadership and stakeholder management._
 
 - **2022:** Rating: 4.2/5
-  *Met all product milestones but faced challenges with team alignment during Q3. Improved communication strategies by year end.*
+  _Met all product milestones but faced challenges with team alignment during Q3. Improved communication strategies by year end._
 
 - **2021:** Rating: 4.8/5
-  *Outstanding performance. Led product redesign that reduced customer churn by 20%. Received Product Excellence Award.*
+  _Outstanding performance. Led product redesign that reduced customer churn by 20%. Received Product Excellence Award._
 
 - **2020:** Rating: 3.8/5
-  *Solid performance but struggled with remote team coordination during pandemic transition. Adapted well by Q4.*
+  _Solid performance but struggled with remote team coordination during pandemic transition. Adapted well by Q4._
 
 - **2019:** Rating: 4.0/5
-  *Strong start as Product Manager. Successfully transitioned from APM role with minimal friction.*
+  _Strong start as Product Manager. Successfully transitioned from APM role with minimal friction._
 
 ## Compensation History
+
 - **2023:** Base Salary: $135,000 + Bonus: $20,000
 - **2022:** Base Salary: $128,000 + Bonus: $15,000
 - **2021:** Base Salary: $120,000 + Bonus: $18,000
@@ -47,6 +51,7 @@
 - **2019:** Base Salary: $105,000 + Bonus: $10,000
 
 ## Other HR Notes
+
 - **Professional Development:** Completed Product Leadership Certification from Pragmatic Institute (2021). Regular attendee at ProductCon and InsurTech conferences.
 - **Mentorship:** Currently mentors two Associate Product Managers and actively participates in the Women in Tech initiative at Insurellm.
 - **Skills:** Expert in Agile/Scrum methodologies, JIRA, Figma, SQL, and product analytics tools.

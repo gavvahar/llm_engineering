@@ -103,9 +103,7 @@ class DealAgentFramework:
     def get_plot_data(cls, max_datapoints=2000):
         client = chromadb.PersistentClient(path=cls.DB)
         collection = client.get_or_create_collection("products")
-        result = collection.get(
-            include=["embeddings", "documents", "metadatas"], limit=max_datapoints
-        )
+        result = collection.get(include=["embeddings", "documents", "metadatas"], limit=max_datapoints)
         vectors = np.array(result["embeddings"])
         documents = result["documents"]
         categories = [metadata["category"] for metadata in result["metadatas"]]

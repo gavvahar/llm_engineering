@@ -76,9 +76,7 @@ class Item(BaseModel):
         return {"prompt": self.prompt, "completion": self.completion}
 
     @staticmethod
-    def push_prompts_to_hub(
-        dataset_name: str, train: list[Self], val: list[Self], test: list[Self]
-    ):
+    def push_prompts_to_hub(dataset_name: str, train: list[Self], val: list[Self], test: list[Self]):
         """Push Item lists to HuggingFace Hub in prompt-completion format for SFT training."""
         DatasetDict(
             {

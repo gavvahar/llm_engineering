@@ -9,7 +9,7 @@ Welcome, LLM engineers in the making!
 I should confess up-front: setting up a powerful environment to work at the forefront of AI is not as simple as I'd like. For most people these instructions will go great; but in some cases, for whatever reason, you'll hit a problem. Please don't hesitate to reach out - I am here to get you up and running quickly. There's nothing worse than feeling _stuck_. Message me in Udemy or email me and I will unstick you quickly!
 
 Email: ed@edwarddonner.com  
-LinkedIn: https://www.linkedin.com/in/eddonner/  
+LinkedIn: https://www.linkedin.com/in/eddonner/
 
 ## Step 0 - Before we begin - addressing the "GOTCHAS" which trip up many people:
 
@@ -19,9 +19,9 @@ Ignore this section at your peril! 80% of the questions I get about setup are so
 
 2. Anti-virus, Firewall, VPN. These can interfere with installations and network access; try temporarily disabling them as needed. Use a hotspot on your phone to prove whether it's a network issue.
 
-3. PC people: The evil Windows 260 character limit to filenames - here is a full [explanation and fix](https://chatgpt.com/share/67b0afb9-1b60-8012-a9f7-f968a5a910c7)! 
+3. PC people: The evil Windows 260 character limit to filenames - here is a full [explanation and fix](https://chatgpt.com/share/67b0afb9-1b60-8012-a9f7-f968a5a910c7)!
 
-4. PC people: If you've not worked with Data Science packages on your computer before, you might need to install Microsoft Build Tools. Here are [instructions](https://chatgpt.com/share/67b0b762-327c-8012-b809-b4ec3b9e7be0). A student also mentioned that [these instructions](https://github.com/bycloudai/InstallVSBuildToolsWindows) might be helpful for people on Windows 11. 
+4. PC people: If you've not worked with Data Science packages on your computer before, you might need to install Microsoft Build Tools. Here are [instructions](https://chatgpt.com/share/67b0b762-327c-8012-b809-b4ec3b9e7be0). A student also mentioned that [these instructions](https://github.com/bycloudai/InstallVSBuildToolsWindows) might be helpful for people on Windows 11.
 
 5. Mac people: If you're new to developing on your Mac, you may need to install XCode developer tools. Here are [instructions](https://chatgpt.com/share/67b0b8d7-8eec-8012-9a37-6973b9db11f5).
 
@@ -31,7 +31,7 @@ Ignore this section at your peril! 80% of the questions I get about setup are so
 
 This is the only section with separate steps for PC people and Mac/Linux people! Please pick your section below, then reconvene for Step 2...
 
-___
+---
 
 **STEP 1 FOR PC people:**
 
@@ -69,13 +69,13 @@ Click Download for Windows. Then run the installer. Accept and pick defaults for
 
 Then go to Start menu, enter cursor. Cursor will come up, and you might need to answer questions. Then you should see the 'new window' screen where you can click "Open Project". If not, go to File menu >> New Window. Then click "Open Project".
 
-[IMPORTANT: Does your Cursor look different to mine? Solution here (bypass new splash screen)](https://edwarddonner.com/avatar?q=54)  
+[IMPORTANT: Does your Cursor look different to mine? Solution here (bypass new splash screen)](https://edwarddonner.com/avatar?q=54)
 
 Find your llm_engineering directory within your projects directory. Double click on llm_engineering so you're looking at the contents of llm_engineering. Then click Open or Open Folder.
 
 Cursor should then open up llm_engineering. You know you're in good shape if you see LLM_ENGINEERING in block caps on the top left.
 
-___
+---
 
 **STEP 1 FOR MAC/LINUX PEOPLE**
 
@@ -110,13 +110,13 @@ Click Download for Mac OS. Or Linux. Then run the installer. Accept and pick def
 
 Then go to Start menu, enter cursor. Cursor will come up, and you might need to answer questions. Then you should see the 'new window' screen where you can click "Open Project". If not, go to File menu >> New Window. Then click "Open Project".
 
-[IMPORTANT: Does your Cursor look different to mine? Solution here (bypass new splash screen)](https://edwarddonner.com/avatar?q=54)  
+[IMPORTANT: Does your Cursor look different to mine? Solution here (bypass new splash screen)](https://edwarddonner.com/avatar?q=54)
 
 Find your llm_engineering directory within your projects directory. Double click on llm_engineering so you're looking at the contents of llm_engineering. Then click Open.
 
 Cursor should then open up llm_engineering. You know you're in good shape if you see LLM_ENGINEERING in block caps on the top left.
 
-___
+---
 
 ## STEP 2: Installing the fabulous **uv** then doing a `uv sync`
 
@@ -144,12 +144,13 @@ uv should install everything blazingly fast. Any problems, please see [Q11 on my
 
 You now have a full spec environment!!
 
-Using uv is simple and fast:  
-1. Instead of `pip install xxx` you do `uv add xxx`  
-2. You never need to activate an environment - uv does it for you.  
+Using uv is simple and fast:
+
+1. Instead of `pip install xxx` you do `uv add xxx`
+2. You never need to activate an environment - uv does it for you.
 3. Instead of `python xxx` you do `uv run xxx`
 
-___
+---
 
 ## STEP 3 - OPTIONAL - Set up OpenAI Account
 
@@ -164,7 +165,7 @@ Go to https://platform.openai.com
 - Press "Create new secret key" - select "Owned by you", give it any name you want, for the project select "Default project", leave Permissions at All
 - Press "Create secret key" and you should see your new key. Press Copy to copy it into your clipboard.
 
-___
+---
 
 ## STEP 4 - needed for any model like OpenAI or Gemini, but not needed if you only use Ollama - create (and SAVE) your .env file
 
@@ -200,8 +201,8 @@ __
 
 (If you are prompted in Cursor to install recommended extensions, just say yes! That is a nice shortcut for this step.)
 
-- Go to view menu and select Extensions.  
-- Search for "python" to bring up the Python extensions. Select the Python extension made by "ms-python" or by "anysphere" and install it if not already installed.  
+- Go to view menu and select Extensions.
+- Search for "python" to bring up the Python extensions. Select the Python extension made by "ms-python" or by "anysphere" and install it if not already installed.
 - Search for "jupyter" and select the extension made by "ms-toolsai" and install it if not already installed.
 
 Now go to View >> Explorer. Open the week1 folder, and click on `day1.ipynb`.

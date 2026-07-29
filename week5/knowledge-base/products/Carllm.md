@@ -45,22 +45,27 @@ Contact our sales team for a personalized quote and discover how Carllm can tran
 In our commitment to continuous improvement and innovation, Insurellm has outlined the following roadmap for Carllm:
 
 ### Q1 2025: Launch Feature Enhancements
+
 - **Expanded data integrations** for better risk assessment.
 - **Enhanced fraud detection algorithms** to reduce losses.
 
 ### Q2 2025: Customer Experience Improvements
+
 - Launch of a new **mobile app** for end-users.
 - Introduction of **telematics-based pricing** to provide even more tailored coverage options.
 
 ### Q3 2025: Global Expansion
+
 - Begin pilot programs for international insurance markets.
 - Collaborate with local insurers to offer compliant, localized versions of Carllm.
 
 ### Q4 2025: AI and Machine Learning Upgrades
+
 - Implement next-gen machine learning models for predictive analysis.
 - Roll out customer insights dashboard updates based on user feedback.
 
 ### 2026: Scaling and Partnerships
+
 - Increase partnerships with automakers for integrated insurance solutions.
 - Enhance the **AI customer support system** to include multi-language support.
 

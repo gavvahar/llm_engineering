@@ -3,12 +3,14 @@
 # Kevin Zhang
 
 ## Summary
+
 - **Date of Birth:** March 27, 1990
 - **Job Title:** Mobile Developer
 - **Location:** San Francisco, California
 - **Current Salary:** $128,000
 
 ## Insurellm Career Progression
+
 - **May 2020 - Present:** Mobile Developer
   - Leads iOS development for Marketllm consumer mobile app
   - Built Android version achieving 4.6 star rating on Play Store
@@ -24,25 +26,28 @@
   - Learned iOS and Android development fundamentals
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.6/5
-  *Excellent performance. Successfully launched Android app on time and under budget. Strong technical leadership.*
+  _Excellent performance. Successfully launched Android app on time and under budget. Strong technical leadership._
 
 - **2022:** Rating: 4.4/5
-  *Exceeded expectations with major iOS app redesign. Improved app performance and user retention significantly.*
+  _Exceeded expectations with major iOS app redesign. Improved app performance and user retention significantly._
 
 - **2021:** Rating: 4.2/5
-  *Strong performance. Delivered all planned features and maintained high app quality standards.*
+  _Strong performance. Delivered all planned features and maintained high app quality standards._
 
 - **2020:** Rating: 4.0/5
-  *Good first year at Insurellm. Quick to learn insurance domain and contribute meaningfully to mobile strategy.*
+  _Good first year at Insurellm. Quick to learn insurance domain and contribute meaningfully to mobile strategy._
 
 ## Compensation History
+
 - **2023:** Base Salary: $128,000 + Bonus: $16,000
 - **2022:** Base Salary: $120,000 + Bonus: $14,000
 - **2021:** Base Salary: $112,000 + Bonus: $12,000
 - **2020:** Base Salary: $105,000 + Bonus: $8,000
 
 ## Other HR Notes
+
 - **Education:** BS in Computer Science from UC Berkeley
 - **Skills:** Expert in Swift, Kotlin, React Native, mobile UI/UX patterns, App Store optimization
 - **Recognition:** Mobile Innovation Award 2023 for Android app launch

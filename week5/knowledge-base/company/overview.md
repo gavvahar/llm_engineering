@@ -9,6 +9,7 @@ Founded in 2015, the company has evolved from a high-growth startup to a lean, p
 Insurellm offers 8 insurance software products across multiple insurance lines:
 
 ### Core Insurance Portals
+
 - **Carllm** - Auto insurance platform for insurers
 - **Homellm** - Home insurance platform for insurers
 - **Lifellm** - Life insurance platform with AI-powered underwriting
@@ -16,6 +17,7 @@ Insurellm offers 8 insurance software products across multiple insurance lines:
 - **Bizllm** - Commercial insurance platform for business coverage
 
 ### Marketplace & Infrastructure
+
 - **Markellm** - Marketplace connecting consumers with insurance providers (original flagship product)
 - **Claimllm** - AI-powered claims processing platform across all insurance lines
 - **Rellm** - Enterprise platform for the reinsurance sector
@@ -23,6 +25,7 @@ Insurellm offers 8 insurance software products across multiple insurance lines:
 ## Scale & Impact
 
 Despite its compact team size, Insurellm has built an impressive client portfolio with 32 active contracts across all product lines, serving clients ranging from regional insurers to national carriers and global reinsurance partners. The company demonstrates exceptional productivity and leverage through:
+
 - Highly automated systems and processes
 - Strategic use of AI and machine learning
 - Remote-first culture enabling access to top talent

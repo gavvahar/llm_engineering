@@ -11,13 +11,9 @@ def _run(cmd, timeout=3):
     Accepts either a string (shell) or list (no shell)."""
     try:
         if isinstance(cmd, str):
-            return subprocess.check_output(
-                cmd, shell=True, text=True, stderr=subprocess.DEVNULL, timeout=timeout
-            ).strip()
+            return subprocess.check_output(cmd, shell=True, text=True, stderr=subprocess.DEVNULL, timeout=timeout).strip()
         else:
-            return subprocess.check_output(
-                cmd, shell=False, text=True, stderr=subprocess.DEVNULL, timeout=timeout
-            ).strip()
+            return subprocess.check_output(cmd, shell=False, text=True, stderr=subprocess.DEVNULL, timeout=timeout).strip()
     except Exception:
         return ""
 
@@ -141,10 +137,7 @@ def _cpu_block():
     if sysname == "Darwin":
         cores_physical = int(_run(["sysctl", "-n", "hw.physicalcpu"]) or "0")
     elif sysname == "Windows":
-        cores_physical = int(
-            _run('powershell -NoProfile -Command "(Get-CimInstance Win32_Processor).NumberOfCores"')
-            or "0"
-        )
+        cores_physical = int(_run('powershell -NoProfile -Command "(Get-CimInstance Win32_Processor).NumberOfCores"') or "0")
     elif sysname == "Linux":
         # This is a quick approximation; fine for our use (parallel -j suggestions)
         try:
@@ -165,15 +158,7 @@ def _cpu_block():
                 if x in fset:
                     simd.append(x)
     elif sysname == "Darwin":
-        feats = (
-            (
-                _run(["sysctl", "-n", "machdep.cpu.features"])
-                + " "
-                + _run(["sysctl", "-n", "machdep.cpu.leaf7_features"])
-            )
-            .upper()
-            .split()
-        )
+        feats = (_run(["sysctl", "-n", "machdep.cpu.features"]) + " " + _run(["sysctl", "-n", "machdep.cpu.leaf7_features"])).upper().split()
         for x in ("AVX512F", "AVX2", "AVX", "FMA", "SSE4_2", "NEON", "SVE"):
             if x in feats:
                 simd.append(x)

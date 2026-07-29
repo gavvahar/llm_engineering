@@ -3,6 +3,7 @@
 **Contract Date:** January 20, 2025
 **Contract Number:** LF-2025-0012
 **Parties:**
+
 - Insurellm, Inc.
 - Evergreen Life Insurance Company
 
@@ -120,13 +121,15 @@ Insurellm commits to providing comprehensive support to Evergreen Life Insurance
 
 **Signatures:**
 
-_________________________________
+---
+
 **Michael Torres**
 **Title**: Chief Revenue Officer
 **Insurellm, Inc.**
 **Date**: January 20, 2025
 
-_________________________________
+---
+
 **Catherine Wu**
 **Title**: Chief Underwriting Officer
 **Evergreen Life Insurance Company**

@@ -3,6 +3,7 @@
 **Contract Date:** March 20, 2025
 **Contract Number:** CR-2025-E-0078
 **Parties:**
+
 - Insurellm, Inc.
 - DriveSmart Insurance Corp.
 
@@ -181,13 +182,15 @@ Insurellm commits to comprehensive Enterprise-level support for DriveSmart Insur
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: March 20, 2025
 
-_________________________________
+---
+
 **Steven Brooks**
 **Title**: President & Chief Operating Officer
 **DriveSmart Insurance Corp.**

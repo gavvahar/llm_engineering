@@ -3,12 +3,14 @@
 # Robert Chen
 
 ## Summary
+
 - **Date of Birth:** February 28, 1983
 - **Job Title:** Senior Full Stack Engineer
 - **Location:** San Francisco, California
 - **Current Salary:** $152,000
 
 ## Insurellm Career Progression
+
 - **January 2016 - Present:** Senior Full Stack Engineer
   - Technical lead for Homellm home insurance portal
   - Architects full-stack solutions using React, Node.js, and PostgreSQL
@@ -24,31 +26,33 @@
   - Gained experience across full technology stack
 
 ## Annual Performance History
+
 - **2023:** Rating: 4.8/5
-  *Exceptional performance. Led critical platform modernization project. Outstanding technical leadership and mentorship.*
+  _Exceptional performance. Led critical platform modernization project. Outstanding technical leadership and mentorship._
 
 - **2022:** Rating: 4.6/5
-  *Exceeded expectations. Delivered major features ahead of schedule with high quality. Strong team collaboration.*
+  _Exceeded expectations. Delivered major features ahead of schedule with high quality. Strong team collaboration._
 
 - **2021:** Rating: 4.4/5
-  *Strong performance with successful migration to microservices architecture. Effective technical decision-making.*
+  _Strong performance with successful migration to microservices architecture. Effective technical decision-making._
 
 - **2020:** Rating: 4.2/5
-  *Good performance maintaining productivity during remote transition. Supported team well through change.*
+  _Good performance maintaining productivity during remote transition. Supported team well through change._
 
 - **2019:** Rating: 4.5/5
-  *Excellent year with successful Homellm rewrite. Strong architectural contributions.*
+  _Excellent year with successful Homellm rewrite. Strong architectural contributions._
 
 - **2018:** Rating: 4.3/5
-  *Solid performance with consistent high-quality delivery. Growing into technical leadership role.*
+  _Solid performance with consistent high-quality delivery. Growing into technical leadership role._
 
 - **2017:** Rating: 4.1/5
-  *Good performance. Expanding expertise across full stack and taking on more complex features.*
+  _Good performance. Expanding expertise across full stack and taking on more complex features._
 
 - **2016:** Rating: 4.0/5
-  *Strong start at Insurellm. Quick to learn domain and contribute effectively.*
+  _Strong start at Insurellm. Quick to learn domain and contribute effectively._
 
 ## Compensation History
+
 - **2023:** Base Salary: $152,000 + Bonus: $28,000
 - **2022:** Base Salary: $145,000 + Bonus: $25,000
 - **2021:** Base Salary: $138,000 + Bonus: $22,000
@@ -59,6 +63,7 @@
 - **2016:** Base Salary: $105,000 + Bonus: $10,000
 
 ## Other HR Notes
+
 - **Education:** MS in Computer Science from Stanford University, BS in Computer Engineering from MIT
 - **Technical Expertise:** Expert in React, Node.js, TypeScript, PostgreSQL, AWS, microservices architecture
 - **Recognition:** Engineering Excellence Award 2023, Technical Leadership Award 2021

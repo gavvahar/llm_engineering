@@ -33,9 +33,7 @@ def main():
 
         with gr.Row():
             with gr.Column(scale=1):
-                chatbot = gr.Chatbot(
-                    label="💬 Conversation", height=600, type="messages", show_copy_button=True
-                )
+                chatbot = gr.Chatbot(label="💬 Conversation", height=600, type="messages", show_copy_button=True)
                 message = gr.Textbox(
                     label="Your Question",
                     placeholder="Ask anything about Insurellm...",
@@ -50,9 +48,7 @@ def main():
                     height=600,
                 )
 
-        message.submit(
-            put_message_in_chatbot, inputs=[message, chatbot], outputs=[message, chatbot]
-        ).then(chat, inputs=chatbot, outputs=[chatbot, context_markdown])
+        message.submit(put_message_in_chatbot, inputs=[message, chatbot], outputs=[message, chatbot]).then(chat, inputs=chatbot, outputs=[chatbot, context_markdown])
 
     ui.launch(inbrowser=True)
 

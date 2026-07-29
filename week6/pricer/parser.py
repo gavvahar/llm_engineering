@@ -21,14 +21,7 @@ def simplify(text_list) -> str:
     """
     Return a simplified string without too much whitespace and limited to MAX_TEXT characters
     """
-    return (
-        str(text_list)
-        .replace("\n", " ")
-        .replace("\r", "")
-        .replace("\t", "")
-        .replace("  ", " ")
-        .strip()[:MAX_TEXT_EACH]
-    )
+    return str(text_list).replace("\n", " ").replace("\r", "").replace("\t", "").replace("  ", " ").strip()[:MAX_TEXT_EACH]
 
 
 def scrub(title, description, features, details) -> str:

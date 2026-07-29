@@ -3,6 +3,7 @@
 **Contract Date:** April 5, 2025
 **Contract Number:** LF-2025-E-0087
 **Parties:**
+
 - Insurellm, Inc.
 - Metropolitan Life Group, Inc.
 
@@ -98,10 +99,11 @@ Metropolitan Life Group will receive the complete Lifellm Enterprise suite:
    - Audit trail and compliance reporting
 
 10. **Blockchain Policy Verification:**
-   - Immutable policy records on private blockchain
-   - Fraud prevention through distributed ledger
-   - Beneficiary verification and claims authentication
-   - Regulatory audit transparency
+
+- Immutable policy records on private blockchain
+- Fraud prevention through distributed ledger
+- Beneficiary verification and claims authentication
+- Regulatory audit transparency
 
 ---
 
@@ -182,13 +184,15 @@ Insurellm commits to comprehensive Enterprise-level support for Metropolitan Lif
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: April 5, 2025
 
-_________________________________
+---
+
 **Richard Thompson**
 **Title**: Chairman & Chief Executive Officer
 **Metropolitan Life Group, Inc.**

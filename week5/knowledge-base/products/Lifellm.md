@@ -9,24 +9,31 @@ Lifellm is an advanced life insurance platform developed by Insurellm that revol
 ## Features
 
 ### 1. AI-Powered Underwriting
+
 Lifellm's sophisticated AI engine analyzes health records, lifestyle data, and demographic information to accelerate the underwriting process. What traditionally took weeks can now be completed in hours or even minutes, enabling insurers to issue policies faster while maintaining accuracy.
 
 ### 2. Predictive Risk Modeling
+
 Advanced machine learning algorithms assess mortality risk by analyzing vast datasets including medical histories, genetic markers, and lifestyle factors. This enables insurers to price policies more accurately and identify opportunities for coverage expansion.
 
 ### 3. Digital Health Integration
+
 Lifellm seamlessly integrates with wearables and health tracking apps, allowing insurers to offer dynamic policies that reward healthy behaviors. This creates win-win scenarios where customers maintain better health while enjoying premium discounts.
 
 ### 4. Automated Policy Management
+
 The platform provides a comprehensive suite of tools for policy administration, including beneficiary management, premium calculations, coverage adjustments, and policy renewals. Automation reduces administrative burden and minimizes errors.
 
 ### 5. Smart Document Processing
+
 Lifellm utilizes natural language processing and optical character recognition to automatically extract and validate information from medical records, applications, and supporting documentation, significantly reducing manual data entry.
 
 ### 6. Customer Portal
+
 A user-friendly portal enables policyholders to manage their coverage, update beneficiaries, access policy documents, and track wellness incentives 24/7. Mobile app integration ensures customers can manage their life insurance anywhere.
 
 ### 7. Compliance Automation
+
 Built-in regulatory compliance tools ensure that policies meet state and federal requirements, with automatic updates as regulations change. This reduces compliance risk for insurers operating across multiple jurisdictions.
 
 ## Pricing

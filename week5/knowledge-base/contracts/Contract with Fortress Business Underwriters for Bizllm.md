@@ -70,13 +70,15 @@
 
 **Signatures:**
 
-_________________________________
+---
+
 **Michael Torres**
 **Title**: Chief Revenue Officer
 **Insurellm, Inc.**
 **Date**: February 1, 2025
 
-_________________________________
+---
+
 **Robert Chen**
 **Title**: Chief Underwriting Officer
 **Fortress Business Underwriters**
@@ -84,4 +86,4 @@ _________________________________
 
 ---
 
-*This contract outlines the terms of the relationship between Insurellm and Fortress Business Underwriters for the Bizllm product, establishing a partnership to transform commercial insurance underwriting operations.*
+_This contract outlines the terms of the relationship between Insurellm and Fortress Business Underwriters for the Bizllm product, establishing a partnership to transform commercial insurance underwriting operations._

@@ -3,6 +3,7 @@
 **Contract Date:** May 15, 2025
 **Contract Number:** HL-2025-E-0156
 **Parties:**
+
 - Insurellm, Inc.
 - United Healthcare Alliance, LLC
 
@@ -240,13 +241,15 @@ Insurellm commits to comprehensive Enterprise-level support for United Healthcar
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: May 15, 2025
 
-_________________________________
+---
+
 **James Patterson**
 **Title**: Chairman & Chief Executive Officer
 **United Healthcare Alliance, LLC**

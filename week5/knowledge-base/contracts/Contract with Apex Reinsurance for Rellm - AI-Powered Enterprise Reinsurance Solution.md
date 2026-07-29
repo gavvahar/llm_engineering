@@ -42,12 +42,16 @@
 
 **Acceptance of Terms**: By signing below, both parties agree to the Terms, Renewal, Features, and Support outlined in this Agreement.
 
-**Insurellm, Inc.**  
-_____________________________  
-Authorized Signature   
-Date: ___________________  
+**Insurellm, Inc.**
 
-**Apex Reinsurance**  
-_____________________________  
+---
+
+Authorized Signature  
+Date: ___________________
+
+**Apex Reinsurance**
+
+---
+
 Authorized Signature  
 Date: ___________________

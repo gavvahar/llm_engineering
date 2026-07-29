@@ -2,12 +2,12 @@
 
 **Contract Number:** IG-2023-EG  
 **Effective Date:** January 1, 2024  
-**Expiration Date:** December 31, 2026  
+**Expiration Date:** December 31, 2026
 
 ## Terms
 
 1. **Parties**: This agreement is made between Insurellm, located at 123 Innovation Drive, Tech City, USA, and EverGuard Insurance, located at 456 Safety Lane, Protectville, USA.
-   
+
 2. **Product Description**: This contract pertains to the use of the Rellm platform, an AI-powered enterprise reinsurance solution provided by Insurellm. EverGuard Insurance will implement Rellm to enhance its reinsurance operations.
 
 3. **Payment Terms**: EverGuard Insurance agrees to pay Insurellm a monthly fee of $10,000 for the duration of this contract, covering the Professional Plan features of Rellm, which includes all advanced integrations and priority customer support.
@@ -46,13 +46,13 @@
 **For Insurellm**: __________________________  
 **Name**: John Smith  
 **Title**: Chief Operating Officer  
-**Date**: _________________  
+**Date**: _________________
 
 **For EverGuard Insurance**: __________________________  
 **Name**: Sarah Johnson  
 **Title**: Chief Executive Officer  
-**Date**: _________________  
+**Date**: _________________
 
---- 
+---
 
 This contract seeks to foster a strong partnership between Insurellm and EverGuard Insurance, leveraging Rellm to innovate and enhance reinsurance capabilities while ensuring mutual growth and compliance in the ever-evolving insurance landscape.

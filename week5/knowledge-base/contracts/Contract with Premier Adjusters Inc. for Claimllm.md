@@ -106,13 +106,15 @@
 
 **Signatures:**
 
-_________________________________
+---
+
 **Sarah Chen**
 **Title**: Vice President of Sales
 **Insurellm, Inc.**
 **Date**: February 15, 2025
 
-_________________________________
+---
+
 **David Kowalski**
 **Title**: President & CEO
 **Premier Adjusters Inc.**
@@ -120,4 +122,4 @@ _________________________________
 
 ---
 
-*This contract establishes Premier Adjusters Inc. as a strategic partner of Insurellm, leveraging advanced AI-powered claims technology to deliver superior service to their clients while optimizing operational efficiency.*
+_This contract establishes Premier Adjusters Inc. as a strategic partner of Insurellm, leveraging advanced AI-powered claims technology to deliver superior service to their clients while optimizing operational efficiency._

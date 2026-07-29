@@ -27,7 +27,7 @@
    - Instant Quoting System
    - Customizable Coverage Plans
    - Customer Insights Dashboard
-   
+
 2. **Mobile Integration**: All features will be accessible through a mobile application that Insurellm will provide.
 3. **Customer Support**: Includes 24/7 automated customer support via AI chatbots and access to dedicated account management support during business hours.
 
@@ -41,4 +41,4 @@
 
 ---
 
-*This contract outlines the terms of the relationship between Insurellm and Roadway Insurance Inc. for the Carllm product, emphasizing the collaborative spirit aimed at transforming the auto insurance landscape.*
+_This contract outlines the terms of the relationship between Insurellm and Roadway Insurance Inc. for the Carllm product, emphasizing the collaborative spirit aimed at transforming the auto insurance landscape._

@@ -1,0 +1,17 @@
+# Community submissions are not maintained/styled by this repo owner and are
+# excluded from formatting. Keep this in sync with the ruff [tool.ruff]
+# exclude list in pyproject.toml.
+# NOTE: unlike ruff, taplo's exclude always wins over include, so there's no
+# carve-out for community-contributions/Nihar_Gavva here. Add an explicit
+# `taplo fmt`/`lint` include or a per-file config if a *.toml ever lands there.
+exclude = [
+    "community-contributions/**/*.toml",
+    "week1/community-contributions/**/*.toml",
+    "week2/community-contributions/**/*.toml",
+    "week3/community-contributions/**/*.toml",
+    "week4/community-contributions/**/*.toml",
+    "week5/community-contributions/**/*.toml",
+    "week6/community-contributions/**/*.toml",
+    "week7/community_contributions/**/*.toml",
+    "week8/community_contributions/**/*.toml",
+]

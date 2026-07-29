@@ -10,15 +10,18 @@ import Trade
 import random
 import numpy as np
 
+
 def trade2():
     # Buy the stock with the highest price today
     ticker = max(prices, key=lambda t: prices[t][0])  # Find ticker with highest price
-    return [Trade(ticker, random.randrange(1, 10))]   # Buy a small quantity
+    return [Trade(ticker, random.randrange(1, 10))]  # Buy a small quantity
+
 
 def trade3():
     # Sell the stock with the lowest price today
     ticker = min(prices, key=lambda t: prices[t][0])
-    return [Trade(ticker, random.randrange(-10, -1))] 
+    return [Trade(ticker, random.randrange(-10, -1))]
+
 
 def trade4():
     # Buy the stock with the largest percent increase today
@@ -26,11 +29,13 @@ def trade4():
     ticker = max(changes, key=changes.get)
     return [Trade(ticker, random.randrange(1, 10))]
 
+
 def trade5():
     # Sell the stock with the largest percent decrease today
     changes = {t: (prices[t][0] - prices[t][1]) / prices[t][1] for t in prices}
     ticker = min(changes, key=changes.get)
     return [Trade(ticker, random.randrange(-10, -1))]
+
 
 def trade6():
     # Buy the 3 stocks with the highest moving average over the last 5 days
@@ -38,11 +43,13 @@ def trade6():
     top_tickers = sorted(mvgs, key=mvgs.get, reverse=True)[:3]
     return [Trade(t, random.randrange(1, 5)) for t in top_tickers]
 
+
 def trade7():
     # Sell the 3 stocks with the lowest moving average over the last 5 days
     mvgs = {t: np.mean(prices[t][:5]) for t in prices}
     bottom_tickers = sorted(mvgs, key=mvgs.get)[:3]
     return [Trade(t, random.randrange(-5, -1)) for t in bottom_tickers]
+
 
 def trade8():
     # Randomly buy or sell a single stock based on a coin flip
@@ -50,10 +57,12 @@ def trade8():
     action = random.choice([-1, 1])  # -1 for sell, 1 for buy
     return [Trade(ticker, action * random.randrange(1, 10))]
 
+
 def trade9():
     # Diversify: Buy a small amount of 5 random stocks
     chosen_tickers = random.sample(tickers, 5)
     return [Trade(t, random.randrange(1, 3)) for t in chosen_tickers]
+
 
 def trade10():
     # Follow the trend: If the market is up today, buy, else sell
@@ -62,11 +71,13 @@ def trade10():
     ticker = random.choice(tickers)
     return [Trade(ticker, action * random.randrange(1, 10))]
 
+
 def trade11():
     # Mean Reversion: Buy the 2 stocks that fell the most yesterday, hoping they rebound
     yesterday_changes = {t: (prices[t][1] - prices[t][2]) / prices[t][2] for t in prices}
     bottom_tickers = sorted(yesterday_changes, key=yesterday_changes.get)[:2]
     return [Trade(t, random.randrange(1, 5)) for t in bottom_tickers]
+
 
 def trade12():
     # Momentum: Short the 2 stocks that rose the most yesterday, expecting a pullback
@@ -74,11 +85,13 @@ def trade12():
     top_tickers = sorted(yesterday_changes, key=yesterday_changes.get, reverse=True)[:2]
     return [Trade(t, random.randrange(-5, -1)) for t in top_tickers]
 
+
 def trade13():
     # Pairs Trading: Long one stock, short another with a similar price history
     correlations = np.corrcoef([prices[t] for t in tickers])
     i, j = np.unravel_index(np.argmax(correlations), correlations.shape)
-    return [Trade(tickers[i], 1), Trade(tickers[j], -1)] 
+    return [Trade(tickers[i], 1), Trade(tickers[j], -1)]
+
 
 def trade14():
     # Relative Strength: Go long on the strongest stock, short the weakest
@@ -87,11 +100,13 @@ def trade14():
     weakest = min(performances, key=performances.get)
     return [Trade(strongest, 1), Trade(weakest, -1)]
 
+
 def trade15():
     # Calendar Spread: Buy this month's option, sell next month's (same strike
     # This is a simplified representation, as actual option trading is more complex
     ticker = random.choice(tickers)
     return [Trade(f"{ticker}_OPT_THIS_MONTH", 1), Trade(f"{ticker}_OPT_NEXT_MONTH", -1)]
+
 
 def trade16():
     # Straddle: Buy both a call and put option on the same stock (same strike
@@ -99,13 +114,15 @@ def trade16():
     strike = prices[ticker][0]  # Use the current price as a simple strike price
     return [Trade(f"{ticker}_CALL_{strike}", 1), Trade(f"{ticker}_PUT_{strike}", 1)]
 
+
 def trade17():
     # Breakout: Buy if a stock breaks above its 52-week high
     ticker = random.choice(tickers)
     if prices[ticker][0] > max(prices[ticker]):
         return [Trade(ticker, random.randrange(1, 10))]
     else:
-        return [] 
+        return []
+
 
 def trade18():
     # Volatility: If market volatility is high, sell (expecting it to decrease
@@ -115,6 +132,7 @@ def trade18():
         return [Trade(ticker, random.randrange(-10, -1))]
     else:
         return []
+
 
 def trade19():
     # Golden Cross: Buy if the short-term moving average crosses above the long-term
@@ -126,15 +144,17 @@ def trade19():
     else:
         return []
 
+
 def trade20():
     # Death Cross: Sell if the short-term moving average crosses below the long-term
     ticker = random.choice(tickers)
     short_ma = np.mean(prices[ticker][:5])
     long_ma = np.mean(prices[ticker][:20])
-    if short_ma < long_ma and long_ma - short_ma < 0.01: 
+    if short_ma < long_ma and long_ma - short_ma < 0.01:
         return [Trade(ticker, random.randrange(-10, -1))]
     else:
         return []
+
 
 def trade21():
     # Correlated Pairs Buy: Buy a pair of stocks that have historically moved together
@@ -142,11 +162,13 @@ def trade21():
     i, j = np.unravel_index(np.argmax(correlations), correlations.shape)
     return [Trade(tickers[i], 1), Trade(tickers[j], 1)]
 
+
 def trade22():
     # Correlated Pairs Sell: Sell a pair of stocks that have historically moved together
     correlations = np.corrcoef([prices[t] for t in tickers])
     i, j = np.unravel_index(np.argmax(correlations), correlations.shape)
     return [Trade(tickers[i], -1), Trade(tickers[j], -1)]
+
 
 def trade23():
     # Contrarian Pairs Buy: Buy a stock that's down while its correlated pair is up
@@ -157,6 +179,7 @@ def trade23():
     else:
         return []
 
+
 def trade24():
     # Contrarian Pairs Sell: Sell a stock that's up while its correlated pair is down
     correlations = np.corrcoef([prices[t] for t in tickers])
@@ -165,6 +188,7 @@ def trade24():
         return [Trade(tickers[i], -1)]
     else:
         return []
+
 
 def trade25():
     # Correlation Reversal: Buy a stock that's recently become less correlated with the market
@@ -179,6 +203,7 @@ def trade25():
     else:
         return []
 
+
 def trade26():
     # Sector Rotation: Buy the top 2 stocks from the sector that's most correlated with the market
     # Assuming you have sector data (e.g., 'sector_map' dict: ticker -> sector)
@@ -186,6 +211,7 @@ def trade26():
     top_sector = max(sector_returns, key=sector_returns.get)
     top_tickers_in_sector = sorted([(t, prices[t][0]) for t in tickers if sector_map[t] == top_sector], key=lambda x: x[1], reverse=True)[:2]
     return [Trade(t, 1) for t, _ in top_tickers_in_sector]
+
 
 def trade27():
     # Beta-Weighted Portfolio: Allocate more to stocks with higher betas (more volatile
@@ -195,6 +221,7 @@ def trade27():
     allocations = {t: betas[t] / total_beta * 100 for t in tickers}
     return [Trade(t, int(allocations[t])) for t in tickers]
 
+
 def trade28():
     # Diversified Portfolio: Buy a mix of stocks with low correlations to each other
     correlations = np.corrcoef([prices[t] for t in tickers])
@@ -203,8 +230,9 @@ def trade28():
         t = random.choice(tickers)
         if all(correlations[tickers.index(t)][tickers.index(c)] < 0.5 for c in chosen_tickers):
             chosen_tickers.append(t)
-            tickers.remove(t) 
+            tickers.remove(t)
     return [Trade(t, random.randrange(1, 3)) for t in chosen_tickers]
+
 
 def trade29():
     # Cointegration: Find a pair of stocks that are cointegrated and trade their spread
@@ -213,9 +241,10 @@ def trade29():
     i, j = random.sample(range(len(tickers)), 2)
     spread = prices[tickers[i]][0] - prices[tickers[j]][0]
     if spread > 0:
-        return [Trade(tickers[i], -1), Trade(tickers[j], 1)] 
+        return [Trade(tickers[i], -1), Trade(tickers[j], 1)]
     else:
         return [Trade(tickers[i], 1), Trade(tickers[j], -1)]
+
 
 def trade30():
     # Basket Trading: Buy or sell a basket of stocks based on their correlation to a benchmark
@@ -227,6 +256,7 @@ def trade30():
     else:
         return [Trade(t, -1) for t in tickers]
 
+
 def trade31():
     # Double Bottom: Buy when a stock forms a double bottom pattern
     ticker = random.choice(tickers)
@@ -234,6 +264,7 @@ def trade31():
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade32():
     # Double Top: Sell when a stock forms a double top pattern
@@ -243,6 +274,7 @@ def trade32():
     else:
         return []
 
+
 def trade33():
     # Head and Shoulders: Sell when a stock forms a head and shoulders pattern
     ticker = random.choice(tickers)
@@ -251,13 +283,15 @@ def trade33():
     else:
         return []
 
-def trade34
+
+def trade34():
     # Inverse Head and Shoulders: Buy when a stock forms an inverse head and shoulders pattern
     ticker = random.choice(tickers)
     if prices[ticker][0] > prices[ticker][2] > prices[ticker][4] and prices[ticker][1] < prices[ticker][3] < prices[ticker][5]:
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade35():
     # Ascending Triangle: Buy when a stock forms an ascending triangle pattern
@@ -268,6 +302,7 @@ def trade35():
     else:
         return []
 
+
 def trade36():
     # Descending Triangle: Sell when a stock forms a descending triangle pattern
     ticker = random.choice(tickers)
@@ -276,6 +311,7 @@ def trade36():
         return [Trade(ticker, -1)]
     else:
         return []
+
 
 def trade37():
     # Flag/Pennant: Buy or sell based on the direction of the flag/pennant pattern
@@ -287,6 +323,7 @@ def trade37():
     else:
         return []
 
+
 def trade38():
     # Gap Up: Buy when a stock opens significantly higher than its previous close
     ticker = random.choice(tickers)
@@ -294,6 +331,7 @@ def trade38():
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade39():
     # Gap Down: Sell when a stock opens significantly lower than its previous close
@@ -303,6 +341,7 @@ def trade39():
     else:
         return []
 
+
 def trade40():
     # Rounding Bottom: Buy when a stock forms a rounding bottom pattern
     ticker = random.choice(tickers)
@@ -311,6 +350,7 @@ def trade40():
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade41():
     # Overbought/Oversold (RSI): Sell if RSI is above 70, buy if below 30
@@ -323,6 +363,7 @@ def trade41():
     else:
         return []
 
+
 def trade42():
     # Bollinger Bands Breakout: Buy if price breaks above the upper band, sell if below lower
     ticker = random.choice(tickers)
@@ -334,17 +375,19 @@ def trade42():
     else:
         return []
 
+
 def trade43():
     # Channel Breakout: Buy or sell when price breaks out of a recent price channel
     ticker = random.choice(tickers)
-    highs = [max(prices[ticker][i:i+5]) for i in range(len(prices[ticker]) - 5)]
-    lows = [min(prices[ticker][i:i+5]) for i in range(len(prices[ticker]) - 5)]
+    highs = [max(prices[ticker][i : i + 5]) for i in range(len(prices[ticker]) - 5)]
+    lows = [min(prices[ticker][i : i + 5]) for i in range(len(prices[ticker]) - 5)]
     if prices[ticker][0] > highs[-1]:
         return [Trade(ticker, 1)]
     elif prices[ticker][0] < lows[-1]:
         return [Trade(ticker, -1)]
     else:
         return []
+
 
 def trade44():
     # Trend Following: Buy if the 20-day moving average is rising, sell if falling
@@ -358,6 +401,7 @@ def trade44():
     else:
         return []
 
+
 def trade45():
     # MACD Crossover: Buy when MACD line crosses above signal line, sell when below
     ticker = random.choice(tickers)
@@ -368,6 +412,7 @@ def trade45():
         return [Trade(ticker, -1)]
     else:
         return []
+
 
 def trade46():
     # Stochastic Oscillator: Buy if %K crosses above %D in oversold zone, sell if opposite
@@ -380,6 +425,7 @@ def trade46():
     else:
         return []
 
+
 def trade47():
     # Volume Spike: Buy if today's volume is much higher than the average
     # You'd need volume data for this strategy
@@ -389,6 +435,7 @@ def trade47():
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade48():
     # Price Spike: Buy if today's price increase is much higher than average daily change
@@ -401,6 +448,7 @@ def trade48():
     else:
         return []
 
+
 def trade49():
     # Mean Reversion (Long-term): Buy if the price is below its 200-day moving average
     ticker = random.choice(tickers)
@@ -410,17 +458,19 @@ def trade49():
     else:
         return []
 
+
 def trade50():
     # Trend Reversal (Parabolic SAR): Buy or sell based on the Parabolic SAR indicator
     # Assuming you have a Parabolic SAR calculation function
     ticker = random.choice(tickers)
     sar = calculate_parabolic_sar(prices[ticker])
-    if prices[ticker][0] > sar[-1]: 
+    if prices[ticker][0] > sar[-1]:
         return [Trade(ticker, 1)]
     elif prices[ticker][0] < sar[-1]:
         return [Trade(ticker, -1)]
     else:
         return []
+
 
 def trade51():
     # Market Outperformance: Buy stocks whose daily returns beat the market
@@ -433,6 +483,7 @@ def trade51():
     else:
         return []
 
+
 def trade52():
     # Market Underperformance: Short stocks whose daily returns lag the market
     total_market_values = [sum(prices[t][i] for t in tickers) for i in range(len(prices[tickers[0]]))]
@@ -444,6 +495,7 @@ def trade52():
     else:
         return []
 
+
 def trade53():
     # Relative Strength to Market: Buy the stock with the highest relative strength to the market
     total_market_values = [sum(prices[t][i] for t in tickers) for i in range(len(prices[tickers[0]]))]
@@ -452,6 +504,7 @@ def trade53():
     ticker = max(relative_strengths, key=relative_strengths.get)
     return [Trade(ticker, 1)]
 
+
 def trade54():
     # Relative Weakness to Market: Short the stock with the lowest relative strength to the market
     total_market_values = [sum(prices[t][i] for t in tickers) for i in range(len(prices[tickers[0]]))]
@@ -459,6 +512,7 @@ def trade54():
     relative_strengths = {t: ((prices[t][0] - prices[t][1]) / prices[t][1]) - market_return for t in tickers}
     ticker = min(relative_strengths, key=relative_strengths.get)
     return [Trade(ticker, -1)]
+
 
 def trade55():
     # Sector vs. Market: Buy top stock from sector outperforming the market, short from underperforming
@@ -477,6 +531,7 @@ def trade55():
         trades.append(Trade(bottom_ticker, -1))
     return trades
 
+
 def trade56():
     # Market-Neutral Pairs: Long/short pairs of stocks with similar market betas
     betas = {t: random.uniform(0.8, 1.2) for t in tickers}  # Placeholder, calculate actual betas
@@ -487,6 +542,7 @@ def trade56():
     else:
         return []
 
+
 def trade57():
     # Beta Rotation: Buy high-beta stocks if the market is rising, low-beta if falling
     total_market_values = [sum(prices[t][i] for t in tickers) for i in range(len(prices[tickers[0]]))]
@@ -495,9 +551,10 @@ def trade57():
     if market_return > 0:  # Market is rising
         target_beta = 1.5  # Example target for high-beta
     else:
-        target_beta = 0.8   # Example target for low-beta
+        target_beta = 0.8  # Example target for low-beta
     closest_ticker = min(tickers, key=lambda t: abs(betas[t] - target_beta))
     return [Trade(closest_ticker, 1 if market_return > 0 else -1)]  # Buy if rising, short if falling
+
 
 def trade58():
     # Market Timing with Relative Strength: Buy strong stocks in up markets, sell in down markets
@@ -511,6 +568,7 @@ def trade58():
         weakest = min(relative_strengths, key=relative_strengths.get)
         return [Trade(weakest, -1)]
 
+
 def trade59():
     # Relative Value to Market: Buy stocks trading below their historical average relative to the market
     # Requires historical data to calculate averages
@@ -523,6 +581,7 @@ def trade59():
         return [Trade(ticker, 1)]
     else:
         return []
+
 
 def trade60():
     # Market-Cap Weighted: Allocate trade amounts proportional to each stock's market cap relative to total market

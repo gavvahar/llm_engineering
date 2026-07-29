@@ -3,6 +3,7 @@
 **Contract Date:** March 8, 2025
 **Contract Number:** HL-2025-0021
 **Parties:**
+
 - Insurellm, Inc.
 - WellCare Insurance Co.
 
@@ -149,13 +150,15 @@ Insurellm commits to providing comprehensive support to WellCare Insurance Co.:
 
 **Signatures:**
 
-_________________________________
+---
+
 **Sarah Chen**
 **Title**: Vice President of Sales
 **Insurellm, Inc.**
 **Date**: March 8, 2025
 
-_________________________________
+---
+
 **Dr. Raymond Foster**
 **Title**: Chief Medical Officer & COO
 **WellCare Insurance Co.**

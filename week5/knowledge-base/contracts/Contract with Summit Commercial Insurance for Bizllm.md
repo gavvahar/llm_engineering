@@ -3,6 +3,7 @@
 **Contract Date:** March 15, 2025
 **Contract Number:** BZ-2025-0091
 **Parties:**
+
 - Insurellm, Inc.
 - Summit Commercial Insurance, LLC
 
@@ -66,12 +67,14 @@ Insurellm commits to providing comprehensive support to Summit Commercial Insura
 
 **Signatures:**
 
-_________________________________
+---
+
 **Michael Torres**
 **Title**: Chief Revenue Officer
 **Insurellm, Inc.**
 
-_________________________________
+---
+
 **Patricia Lawson**
 **Title**: Vice President of Operations
 **Summit Commercial Insurance, LLC**

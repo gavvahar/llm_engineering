@@ -8,17 +8,17 @@
 ## Terms
 
 1. **Parties Involved**: This contract is entered into between Insurellm (the "Provider") and TechDrive Insurance (the "Customer").
-   
+
 2. **License Grant**: Insurellm grants TechDrive Insurance a non-exclusive, non-transferable license to use the Carllm product as per the selected pricing tier (Professional Tier at $2,500/month).
-   
+
 3. **Payment Terms**: TechDrive Insurance agrees to make monthly payments of $2,500 for the duration of this contract, due on the 5th of each month.
-   
+
 4. **Confidentiality**: Both parties shall maintain confidentiality regarding each other’s proprietary information throughout the duration of this contract and for three years following its termination.
 
 ## Renewal
 
 1. **Automatic Renewal**: This contract shall automatically renew for additional one-year terms unless either party provides written notice of non-renewal at least 30 days prior to the contract expiration.
-   
+
 2. **Pricing Review**: The pricing for any renewal period shall be discussed 60 days prior to the end of the term and agreed upon in writing.
 
 ## Features
@@ -54,6 +54,6 @@ Date: ____________
 **TechDrive Insurance Representative:**  
 Name: Sarah Johnson  
 Title: Operations Director  
-Date: ____________  
+Date: ____________
 
 This contract will serve as the foundational agreement for the ongoing collaboration between Insurellm and TechDrive Insurance in optimizing their auto insurance offerings through the Carllm product.

@@ -1,0 +1,13 @@
+# Community submissions are not maintained/styled by this repo owner and are
+# excluded from formatting, except for the owner's own contribution folder.
+# Keep this in sync with the ruff [tool.ruff] exclude list in pyproject.toml.
+community-contributions
+!community-contributions/Nihar_Gavva
+week1/community-contributions
+week2/community-contributions
+week3/community-contributions
+week4/community-contributions
+week5/community-contributions
+week6/community-contributions
+week7/community_contributions
+week8/community_contributions

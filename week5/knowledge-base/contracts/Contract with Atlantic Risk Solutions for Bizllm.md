@@ -84,13 +84,15 @@
 
 **Signatures:**
 
-_________________________________
+---
+
 **Michael Torres**
 **Title**: Chief Revenue Officer
 **Insurellm, Inc.**
 **Date**: January 15, 2025
 
-_________________________________
+---
+
 **Diana Marquez**
 **Title**: Senior Vice President, Commercial Lines
 **Atlantic Risk Solutions**
@@ -98,4 +100,4 @@ _________________________________
 
 ---
 
-*This contract establishes a professional partnership between Insurellm and Atlantic Risk Solutions, enabling Atlantic to leverage cutting-edge AI technology for commercial insurance underwriting and administration.*
+_This contract establishes a professional partnership between Insurellm and Atlantic Risk Solutions, enabling Atlantic to leverage cutting-edge AI technology for commercial insurance underwriting and administration._

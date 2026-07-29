@@ -10,7 +10,7 @@
 
 3. **Contract Duration**: This Agreement shall commence on [Insert Start Date] and continue for a period of [Insert Duration, e.g., 12 months] unless terminated earlier as per the provisions herein.
 
-4. **Payment Terms**: 
+4. **Payment Terms**:
    - The Customer shall pay an amount of $10,000 per month for the Standard Tier of the Homellm service.
    - Payments are due within 30 days of invoicing.
 
@@ -29,7 +29,7 @@
 ## Features
 
 - **AI-Powered Risk Assessment**: Customer will have access to enhanced risk evaluation tools, allowing for personalized underwriting based on real-time data analysis.
-  
+
 - **Dynamic Pricing Model**: The Customer can leverage flexible premiums adjusted according to customer risk profiles.
 
 - **Instant Claim Processing**: Claims submitted by the Customer's clients will be processed through an automated system, with most claims resolved within hours.
@@ -50,7 +50,7 @@
 
 3. **Updates and Improvements**: Customer will receive all software updates and feature enhancements as they become available, without additional charge.
 
---- 
+---
 
 **AGREEMENT SIGNATURES**
 
@@ -58,16 +58,18 @@ By signing below, the parties acknowledge their acceptance of the terms of this 
 
 **For Insurellm:**
 
-______________________________  
+---
+
 [Name], [Title]  
 Date: ______________________
 
 **For Greenstone Insurance:**
 
-______________________________  
+---
+
 [Name], [Title]  
 Date: ______________________
 
---- 
+---
 
-*This contract is intended for illustrative purposes only and does not constitute a real legal document.*
+_This contract is intended for illustrative purposes only and does not constitute a real legal document._

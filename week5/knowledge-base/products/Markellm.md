@@ -27,28 +27,34 @@ Markellm is an innovative two-sided marketplace designed to seamlessly connect c
 At Markellm, we believe in transparency and flexibility. Our pricing structure is designed to accommodate different types of users—whether you're a consumer seeking insurance or an insurance provider seeking customers.
 
 ### For Consumers:
+
 - **Free Membership**: Access to the marketplace at no cost, allowing unlimited browsing and comparisons.
 - **Premium Features**: Optional subscription at $9.99/month for advanced analytics on choices, priority customer support, and enhanced customization options.
 
 ### For Insurance Companies:
+
 - **Basic Listing Fee**: $199/month for a featured listing on the platform, providing exposure to thousands of potential customers.
 - **Performance-Based Pricing**: Option for variable pricing based on successful customer acquisitions— pay $25 per lead generated through Markellm.
 
 ## 2025-2026 Roadmap
 
 ### Q1 2025
+
 - Launch a mobile app version of Markellm, making it even easier for consumers and insurers to connect on-the-go.
 - Introduce a referral program that rewards users for promoting Markellm to their network.
 
 ### Q2 2025
+
 - Expand the marketplace to include additional insurance products, such as life and health insurance.
 - Partner with third-party data aggregators to enhance the accuracy of our AI matching capabilities.
 
 ### Q3 2025
+
 - Initiate a comprehensive marketing campaign targeting both consumers and insurers to increase user acquisition and brand awareness.
 - Release user testimonials and case studies showcasing successful matches made through Markellm.
 
 ### Q4 2026
+
 - Implement machine learning enhancements to our AI algorithm, further increasing the precision and personalization of matches.
 - Explore international expansion opportunities, launching in select markets outside the US.
 

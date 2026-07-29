@@ -104,13 +104,15 @@
 
 **Signatures:**
 
-_________________________________
+---
+
 **Michael Torres**
 **Title**: Chief Revenue Officer
 **Insurellm, Inc.**
 **Date**: March 1, 2025
 
-_________________________________
+---
+
 **Jonathan Park**
 **Title**: President & CEO
 **Guardian Life Partners**
@@ -118,4 +120,4 @@ _________________________________
 
 ---
 
-*This contract establishes Guardian Life Partners as a strategic partner leveraging Lifellm's advanced AI underwriting and digital health integration to modernize life insurance operations.*
+_This contract establishes Guardian Life Partners as a strategic partner leveraging Lifellm's advanced AI underwriting and digital health integration to modernize life insurance operations._

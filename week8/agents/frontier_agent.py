@@ -32,13 +32,11 @@ class FrontierAgent(Agent):
         :return: text to insert in the prompt that provides context
         """
         message = "To provide some context, here are some other items that might be similar to the item you need to estimate.\n\n"
-        for similar, price in zip(similars, prices):
+        for similar, price in zip(similars, prices, strict=False):
             message += f"Potentially related product:\n{similar}\nPrice is ${price:.2f}\n\n"
         return message
 
-    def messages_for(
-        self, description: str, similars: List[str], prices: List[float]
-    ) -> List[Dict[str, str]]:
+    def messages_for(self, description: str, similars: List[str], prices: List[float]) -> List[Dict[str, str]]:
         """
         Create the message list to be included in a call to OpenAI
         With the system and user prompt
@@ -55,9 +53,7 @@ class FrontierAgent(Agent):
         """
         Return a list of items similar to the given one by looking in the Chroma datastore
         """
-        self.log(
-            "Frontier Agent is performing a RAG search of the Chroma datastore to find 5 similar products"
-        )
+        self.log("Frontier Agent is performing a RAG search of the Chroma datastore to find 5 similar products")
         vector = self.model.encode([description])
         results = self.collection.query(query_embeddings=vector.astype(float).tolist(), n_results=5)
         documents = results["documents"][0][:]
@@ -81,9 +77,7 @@ class FrontierAgent(Agent):
         :return: an estimate of the price
         """
         documents, prices = self.find_similars(description)
-        self.log(
-            f"Frontier Agent is about to call {self.MODEL} with context including 5 similar products"
-        )
+        self.log(f"Frontier Agent is about to call {self.MODEL} with context including 5 similar products")
         response = self.client.chat.completions.create(
             model=self.MODEL,
             messages=self.messages_for(description, documents, prices),

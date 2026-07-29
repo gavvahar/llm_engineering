@@ -1,13 +1,12 @@
 from typing import Optional, List
 from agents.agent import Agent
-from agents.deals import ScrapedDeal, DealSelection, Deal, Opportunity
+from agents.deals import Deal, Opportunity
 from agents.scanner_agent import ScannerAgent
 from agents.ensemble_agent import EnsembleAgent
 from agents.messaging_agent import MessagingAgent
 
 
 class PlanningAgent(Agent):
-
     name = "Planning Agent"
     color = Agent.GREEN
     DEAL_THRESHOLD = 50
@@ -34,7 +33,7 @@ class PlanningAgent(Agent):
         self.log(f"Planning Agent has processed a deal with discount ${discount:.2f}")
         return Opportunity(deal=deal, estimate=estimate, discount=discount)
 
-    def plan(self, memory: List[str] = []) -> Optional[Opportunity]:
+    def plan(self, memory: List[str] = None) -> Optional[Opportunity]:
         """
         Run the full workflow:
         1. Use the ScannerAgent to find deals from RSS feeds
@@ -43,6 +42,8 @@ class PlanningAgent(Agent):
         :param memory: a list of URLs that have been surfaced in the past
         :return: an Opportunity if one was surfaced, otherwise None
         """
+        if memory is None:
+            memory = []
         self.log("Planning Agent is kicking off a run")
         selection = self.scanner.scan(memory=memory)
         if selection:

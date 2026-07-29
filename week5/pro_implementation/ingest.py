@@ -35,12 +35,8 @@ class Chunk(BaseModel):
     headline: str = Field(
         description="A brief heading for this chunk, typically a few words, that is most likely to be surfaced in a query",
     )
-    summary: str = Field(
-        description="A few sentences summarizing the content of this chunk to answer common questions"
-    )
-    original_text: str = Field(
-        description="The original text of this chunk from the provided document, exactly as is, not changed in any way"
-    )
+    summary: str = Field(description="A few sentences summarizing the content of this chunk to answer common questions")
+    original_text: str = Field(description="The original text of this chunk from the provided document, exactly as is, not changed in any way")
 
     def as_result(self, document):
         metadata = {"source": document["source"], "type": document["type"]}

@@ -45,9 +45,7 @@ class Result(BaseModel):
 
 
 class RankOrder(BaseModel):
-    order: list[int] = Field(
-        description="The order of relevance of chunks, from most relevant to least relevant, by chunk id number"
-    )
+    order: list[int] = Field(description="The order of relevance of chunks, from most relevant to least relevant, by chunk id number")
 
 
 @retry(wait=wait)
@@ -75,20 +73,16 @@ Reply only with the list of ranked chunk ids, nothing else. Include all the chun
 
 
 def make_rag_messages(question, history, chunks):
-    context = "\n\n".join(
-        f"Extract from {chunk.metadata['source']}:\n{chunk.page_content}" for chunk in chunks
-    )
+    context = "\n\n".join(f"Extract from {chunk.metadata['source']}:\n{chunk.page_content}" for chunk in chunks)
     system_prompt = SYSTEM_PROMPT.format(context=context)
-    return (
-        [{"role": "system", "content": system_prompt}]
-        + history
-        + [{"role": "user", "content": question}]
-    )
+    return [{"role": "system", "content": system_prompt}] + history + [{"role": "user", "content": question}]
 
 
 @retry(wait=wait)
-def rewrite_query(question, history=[]):
+def rewrite_query(question, history=None):
     """Rewrite the user's question to be a more specific question that is more likely to surface relevant content in the Knowledge Base."""
+    if history is None:
+        history = []
     message = f"""
 You are in a conversation with a user, answering questions about the company Insurellm.
 You are about to look up information in a Knowledge Base to answer the user's question.
@@ -120,7 +114,7 @@ def fetch_context_unranked(question):
     query = openai.embeddings.create(model=embedding_model, input=[question]).data[0].embedding
     results = collection.query(query_embeddings=[query], n_results=RETRIEVAL_K)
     chunks = []
-    for result in zip(results["documents"][0], results["metadatas"][0]):
+    for result in zip(results["documents"][0], results["metadatas"][0], strict=False):
         chunks.append(Result(page_content=result[0], metadata=result[1]))
     return chunks
 
@@ -135,10 +129,12 @@ def fetch_context(original_question):
 
 
 @retry(wait=wait)
-def answer_question(question: str, history: list[dict] = []) -> tuple[str, list]:
+def answer_question(question: str, history: list[dict] = None) -> tuple[str, list]:
     """
     Answer a question using RAG and return the answer and the retrieved context
     """
+    if history is None:
+        history = []
     chunks = fetch_context(question)
     messages = make_rag_messages(question, history, chunks)
     response = completion(model=MODEL, messages=messages)

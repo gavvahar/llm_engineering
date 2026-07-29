@@ -75,10 +75,7 @@ class Tester:
         )
 
         # Pre-format hover text
-        df["hover"] = [
-            f"{t}\nGuess=${g:,.2f} Actual=${y:,.2f}"
-            for t, g, y in zip(df["title"], df["guess"], df["truth"])
-        ]
+        df["hover"] = [f"{t}\nGuess=${g:,.2f} Actual=${y:,.2f}" for t, g, y in zip(df["title"], df["guess"], df["truth"], strict=False)]
 
         max_val = float(max(df["truth"].max(), df["guess"].max()))
 
@@ -125,18 +122,15 @@ class Tester:
         # Running mean and std (pure Python)
         running_sums = list(accumulate(self.errors))
         x = list(range(1, n + 1))
-        running_means = [s / i for s, i in zip(running_sums, x)]
+        running_means = [s / i for s, i in zip(running_sums, x, strict=False)]
 
         running_squares = list(accumulate(e * e for e in self.errors))
-        running_stds = [
-            math.sqrt((sq_sum / i) - (mean**2)) if i > 1 else 0
-            for i, sq_sum, mean in zip(x, running_squares, running_means)
-        ]
+        running_stds = [math.sqrt((sq_sum / i) - (mean**2)) if i > 1 else 0 for i, sq_sum, mean in zip(x, running_squares, running_means, strict=False)]
 
         # 95% confidence interval for mean
-        ci = [1.96 * (sd / math.sqrt(i)) if i > 1 else 0 for i, sd in zip(x, running_stds)]
-        upper = [m + c for m, c in zip(running_means, ci)]
-        lower = [m - c for m, c in zip(running_means, ci)]
+        ci = [1.96 * (sd / math.sqrt(i)) if i > 1 else 0 for i, sd in zip(x, running_stds, strict=False)]
+        upper = [m + c for m, c in zip(running_means, ci, strict=False)]
+        lower = [m - c for m, c in zip(running_means, ci, strict=False)]
 
         # Title with final stats
         final_mean = running_means[-1]
@@ -173,11 +167,7 @@ class Tester:
                         ci,
                     )
                 ),
-                hovertemplate=(
-                    "n=%{x}<br>"
-                    "Avg Error=$%{y:,.2f}<br>"
-                    "±95% CI=$%{customdata[0]:,.2f}<extra></extra>"
-                ),
+                hovertemplate=("n=%{x}<br>Avg Error=$%{y:,.2f}<br>±95% CI=$%{customdata[0]:,.2f}<extra></extra>"),
             )
         )
 

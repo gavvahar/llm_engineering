@@ -9,33 +9,43 @@ Claimllm is Insurellm's revolutionary claims processing platform that transforms
 ## Features
 
 ### 1. Intelligent FNOL Processing
+
 Claimllm's AI-powered first notice of loss intake captures claim details through multiple channels including mobile apps, web portals, phone integrations, and chatbots. Natural language processing extracts key information automatically, creating structured claim files without manual data entry.
 
 ### 2. Automated Triage and Routing
+
 Machine learning algorithms instantly assess claim severity, complexity, and fraud potential to route claims to appropriate handlers. Simple claims enter straight-through processing while complex cases receive immediate adjuster assignment with pre-populated investigation guidance.
 
 ### 3. Computer Vision Damage Assessment
+
 Advanced image recognition technology analyzes photos and videos of damaged property or vehicles to estimate repair costs accurately. The system identifies damage types, measures extent, and generates preliminary estimates in minutes rather than days.
 
 ### 4. Predictive Fraud Detection
+
 Sophisticated fraud analytics evaluate claims against historical patterns, network analysis, and anomaly detection to flag suspicious claims for investigation. The system learns continuously from confirmed fraud cases to improve detection accuracy.
 
 ### 5. Smart Document Processing
+
 Optical character recognition and natural language processing automatically extract information from medical records, police reports, repair estimates, and supporting documentation. The system validates information against policy terms and flags discrepancies for review.
 
 ### 6. Dynamic Reserve Setting
+
 AI-powered predictive modeling analyzes claim characteristics, historical outcomes, and current case details to recommend accurate reserves. Automated reserve adjustments occur as new information becomes available, ensuring financial accuracy.
 
 ### 7. Vendor Management Platform
+
 Integrated tools coordinate with repair shops, medical providers, lawyers, and other service providers. Automated assignment based on location, capacity, and performance metrics ensures efficient vendor utilization and quality outcomes.
 
 ### 8. Payment Automation
+
 Straight-through payment processing for approved claims includes direct deposit, digital payments, and traditional check issuance. Multi-party payment splitting handles complex scenarios involving mortgagees, lessors, and medical providers.
 
 ### 9. Claimant Communication Hub
+
 Omnichannel communication tools keep claimants informed via their preferred method—text, email, app notifications, or phone. Automated status updates reduce incoming inquiries while improving customer satisfaction.
 
 ### 10. Analytics and Reporting
+
 Comprehensive dashboards track key metrics including cycle time, loss ratios, settlement patterns, and customer satisfaction. Predictive analytics identify process bottlenecks and opportunities for improvement.
 
 ## Pricing

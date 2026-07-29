@@ -4,6 +4,7 @@
 **Contract ID:** INS-2023-0092
 
 ### Terms
+
 This contract (“Contract”) is made between Insurellm, a company incorporated in the United States, and BrightWay Solutions, a technology provider specializing in insurance services.
 
 1. **Scope of Services:**  
@@ -16,6 +17,7 @@ This contract (“Contract”) is made between Insurellm, a company incorporated
    Insurellm commits to a 99.9% uptime for the platform with dedicated support response times not exceeding 4 business hours.
 
 ### Renewal
+
 1. **Automatic Renewal:**  
    This Contract will automatically renew for additional one-year terms unless either party provides a written notice of intent to terminate at least 30 days prior to the renewal date.
 
@@ -23,6 +25,7 @@ This contract (“Contract”) is made between Insurellm, a company incorporated
    Both parties will enter a review period each year, during which they will discuss potential amendments to the pricing or contract terms based on market conditions and performance metrics.
 
 ### Features
+
 1. **Access to AI-Powered Matching:**  
    BrightWay Solutions will benefit from the AI algorithms for optimal customer matches, helping them connect with consumers looking for their specific insurance offerings.
 
@@ -36,6 +39,7 @@ This contract (“Contract”) is made between Insurellm, a company incorporated
    BrightWay Solutions may request customizations to their listing page on Markellm, within the capabilities of the platform.
 
 ### Support
+
 1. **Dedicated Customer Support:**  
    BrightWay Solutions will have access to a dedicated support team from Insurellm during standard business hours (9 AM - 7 PM EST).
 
@@ -46,14 +50,17 @@ This contract (“Contract”) is made between Insurellm, a company incorporated
    Insurellm agrees to provide one free training session on how to utilize the Markellm platform effectively for BrightWay Solutions’ team upon contract signing.
 
 ### Signatures
+
 By signing below, both parties agree to the terms and conditions outlined in this Contract.
 
-__________________________  
+---
+
 **[Name], [Title]**  
 **Insurellm**  
 Date: ______________________
 
-__________________________  
+---
+
 **[Name], [Title]**  
 **BrightWay Solutions**  
 Date: ______________________

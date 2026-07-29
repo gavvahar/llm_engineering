@@ -135,13 +135,15 @@
 
 **Signatures:**
 
-_________________________________
+---
+
 **Sarah Chen**
 **Title**: Vice President of Sales
 **Insurellm, Inc.**
 **Date**: January 25, 2025
 
-_________________________________
+---
+
 **Dr. Karen Phillips**
 **Title**: President & Chief Executive Officer
 **Harmony Health Plans**
@@ -149,4 +151,4 @@ _________________________________
 
 ---
 
-*This contract establishes Harmony Health Plans as a strategic partner leveraging Healthllm's advanced AI and predictive analytics to improve member outcomes while managing costs effectively.*
+_This contract establishes Harmony Health Plans as a strategic partner leveraging Healthllm's advanced AI and predictive analytics to improve member outcomes while managing costs effectively._

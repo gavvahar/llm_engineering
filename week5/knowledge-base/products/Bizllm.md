@@ -9,30 +9,39 @@ Bizllm is Insurellm's enterprise-grade commercial insurance platform designed to
 ## Features
 
 ### 1. Multi-Line Underwriting Engine
+
 Bizllm's sophisticated underwriting platform handles diverse commercial insurance products within a single unified system. AI-powered risk assessment evaluates business operations, industry-specific exposures, and financial stability to generate accurate quotes across multiple coverage types.
 
 ### 2. Business Intelligence Integration
+
 The platform automatically gathers and analyzes data from business registries, financial databases, industry reports, and third-party risk intelligence sources to provide comprehensive underwriting insights without manual research.
 
 ### 3. Cyber Risk Assessment
+
 Specialized cyber insurance capabilities include automated evaluation of digital security postures, breach history analysis, and IT infrastructure assessment. The platform identifies vulnerabilities and recommends risk mitigation measures to reduce exposure.
 
 ### 4. Workers' Compensation Optimization
+
 Integrated workers' comp tools analyze payroll data, industry classifications, claims history, and safety programs to accurately price coverage and identify opportunities for premium credits through loss control initiatives.
 
 ### 5. Commercial Property Evaluation
+
 Advanced property risk modeling incorporates location data, building characteristics, catastrophe modeling, and environmental hazards to assess property risks accurately. Integration with aerial imagery and IoT sensors provides real-time property condition monitoring.
 
 ### 6. Professional Liability Specialization
+
 Industry-specific professional liability underwriting for sectors including healthcare, legal, accounting, technology, and consulting. The platform evaluates professional credentials, claims history, and industry-specific risk factors.
 
 ### 7. Portfolio Management Dashboard
+
 Comprehensive analytics provide insurers with portfolio-level insights including line-of-business performance, loss ratios, renewal rates, and geographic concentrations. Predictive analytics identify profitable growth opportunities and emerging risks.
 
 ### 8. Agent and Broker Portal
+
 Dedicated portals enable distribution partners to quote, bind, and service commercial policies efficiently. Real-time commission tracking, marketing materials, and training resources support productive agency relationships.
 
 ### 9. Claims Management Integration
+
 Seamless connection with claims systems enables fast incident reporting, reserve establishment, and loss tracking. AI-powered tools identify subrogation opportunities and predict claim severity for better reserves.
 
 ## Pricing

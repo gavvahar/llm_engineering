@@ -3,9 +3,7 @@ from modal import Volume, Image
 # Setup - define our infrastructure with code!
 
 app = modal.App("pricer-service")
-image = Image.debian_slim().pip_install(
-    "huggingface", "torch", "transformers", "bitsandbytes", "accelerate", "peft"
-)
+image = Image.debian_slim().pip_install("huggingface", "torch", "transformers", "bitsandbytes", "accelerate", "peft")
 
 # This collects the secret from Modal.
 # Depending on your Modal configuration, you may need to replace "huggingface-secret" with "hf-secret"
@@ -57,12 +55,8 @@ class Pricer:
         self.tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.padding_side = "right"
-        self.base_model = AutoModelForCausalLM.from_pretrained(
-            BASE_MODEL, quantization_config=quant_config, device_map="auto"
-        )
-        self.fine_tuned_model = PeftModel.from_pretrained(
-            self.base_model, FINETUNED_MODEL, revision=REVISION
-        )
+        self.base_model = AutoModelForCausalLM.from_pretrained(BASE_MODEL, quantization_config=quant_config, device_map="auto")
+        self.fine_tuned_model = PeftModel.from_pretrained(self.base_model, FINETUNED_MODEL, revision=REVISION)
 
     @modal.method()
     def price(self, description: str) -> float:

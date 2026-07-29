@@ -27,9 +27,7 @@ class RetrievalEval(BaseModel):
 class AnswerEval(BaseModel):
     """LLM-as-a-judge evaluation of answer quality."""
 
-    feedback: str = Field(
-        description="Concise feedback on the answer quality, comparing it to the reference answer and evaluating based on the retrieved context"
-    )
+    feedback: str = Field(description="Concise feedback on the answer quality, comparing it to the reference answer and evaluating based on the retrieved context")
     accuracy: float = Field(
         description="How factually correct is the answer compared to the reference answer? 1 (wrong. any wrong answer must score 1) to 5 (ideal - perfectly accurate). An acceptable answer would score 3."
     )
@@ -63,9 +61,7 @@ def calculate_ndcg(keyword: str, retrieved_docs: list, k: int = 10) -> float:
     keyword_lower = keyword.lower()
 
     # Binary relevance: 1 if keyword found, 0 otherwise
-    relevances = [
-        1 if keyword_lower in doc.page_content.lower() else 0 for doc in retrieved_docs[:k]
-    ]
+    relevances = [1 if keyword_lower in doc.page_content.lower() else 0 for doc in retrieved_docs[:k]]
 
     # DCG
     dcg = calculate_dcg(relevances, k)

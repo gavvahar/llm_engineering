@@ -3,6 +3,7 @@
 **Contract Date:** April 28, 2025
 **Contract Number:** RE-2025-E-0203
 **Parties:**
+
 - Insurellm, Inc.
 - GlobalRe Partners International, Ltd.
 
@@ -275,13 +276,15 @@ Insurellm commits to comprehensive Enterprise-level support for GlobalRe Partner
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: April 28, 2025
 
-_________________________________
+---
+
 **Sir Charles Pemberton**
 **Title**: Group Chief Executive Officer
 **GlobalRe Partners International, Ltd.**

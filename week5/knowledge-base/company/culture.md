@@ -1,23 +1,29 @@
 # Insurellm Culture
 
 ## Vision Statement
+
 To revolutionize the insurance industry through innovative technology that makes insurance accessible, transparent, and effortless for everyone.
 
 ## Mission Statement
+
 We empower insurance providers and consumers with cutting-edge software solutions that streamline processes, enhance customer experiences, and drive meaningful connections in the insurance marketplace. By combining deep industry expertise with technological innovation, we're building the future of insurance.
 
 ## Core Values
 
 ### Innovation First
+
 We challenge the status quo and embrace creative problem-solving. Our team is encouraged to experiment, take calculated risks, and push the boundaries of what's possible in insurance technology. We believe that breakthrough solutions come from curiosity, collaboration, and a willingness to learn from both successes and failures.
 
 ### Customer Obsession
+
 Our clients' success is our success. We deeply understand our customers' needs and work tirelessly to exceed their expectations. Every product decision, every feature, and every interaction is guided by a commitment to delivering exceptional value and building lasting partnerships.
 
 ### Integrity & Transparency
+
 We operate with honesty and openness in everything we do. From our products to our internal operations, we believe that trust is earned through consistent ethical behavior, clear communication, and accountability at all levels of the organization.
 
 ### Collaborative Excellence
+
 We achieve more together. We foster a culture where diverse perspectives are valued, knowledge is shared freely, and every team member is empowered to contribute their unique talents. We celebrate collective wins and support each other through challenges.
 
 ## Employer Value Proposition

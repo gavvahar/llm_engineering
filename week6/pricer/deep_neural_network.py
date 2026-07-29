@@ -42,7 +42,7 @@ class DeepNeuralNetwork(nn.Module):
 
         # Residual blocks
         self.residual_blocks = nn.ModuleList()
-        for i in range(num_layers - 2):
+        for _i in range(num_layers - 2):
             self.residual_blocks.append(ResidualBlock(hidden_size, dropout_prob))
 
         # Output layer

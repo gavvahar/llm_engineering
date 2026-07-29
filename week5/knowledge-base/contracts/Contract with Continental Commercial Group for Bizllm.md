@@ -3,6 +3,7 @@
 **Contract Date:** April 12, 2025
 **Contract Number:** BZ-2025-E-0147
 **Parties:**
+
 - Insurellm, Inc.
 - Continental Commercial Group, Inc.
 
@@ -114,13 +115,15 @@ Insurellm commits to comprehensive Enterprise-level support:
 
 **Signatures:**
 
-_________________________________
+---
+
 **Jennifer Rodriguez**
 **Title**: Chief Executive Officer
 **Insurellm, Inc.**
 **Date**: April 12, 2025
 
-_________________________________
+---
+
 **Thomas Wellington**
 **Title**: President & Chief Operating Officer
 **Continental Commercial Group, Inc.**

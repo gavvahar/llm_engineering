@@ -91,9 +91,7 @@ def create_token_graph(model_name: str, predictions: List[Dict]) -> nx.DiGraph:
         # Add alternative token nodes slightly below main sequence
         for j, (alt_token, alt_prob) in enumerate(pred["alternatives"]):
             alt_id = f"t{i}_alt{j}"
-            G.add_node(
-                alt_id, token=alt_token, prob=f"{alt_prob * 100:.1f}%", color="lightgray", size=6000
-            )
+            G.add_node(alt_id, token=alt_token, prob=f"{alt_prob * 100:.1f}%", color="lightgray", size=6000)
 
             # Add edge from main token to its alternatives only
             G.add_edge(parent_token, alt_id)
