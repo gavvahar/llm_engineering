@@ -196,6 +196,11 @@ commands = [
   [
     "tox",
     "-e",
+    "format",
+  ],
+  [
+    "tox",
+    "-e",
     "lint",
   ],
   [
@@ -212,10 +217,5 @@ commands = [
     "tox",
     "-e",
     "toml-lint",
-  ],
-  [
-    "tox",
-    "-e",
-    "format",
   ],
 ]
